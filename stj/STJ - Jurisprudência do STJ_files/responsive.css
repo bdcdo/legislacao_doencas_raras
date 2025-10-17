@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1440px) {
+	a.link_menu_superior_n1 {
+    	font-size: 1.1em;
+    	padding:0 8px 6px 8px;
+  	}
+  	#menuprincipal {
+  		padding-left:0;
+  		padding-right:0;
+  	}
+}
+@media only screen and (max-width: 1024px) {
+  	.acessibilidade, .sobMedida {
+  		padding-left: 0.5em;
+		text-align: left;
+  	}
+	.combosobMedida_opcoes a {
+		display: block;
+    	/*padding-left: 27px;*/
+    	color: #333;
+	}
+	a.link_menu_superior_n1 {
+    	font-size: 1em;
+    	padding:0 5px 6px 5px;
+  	}
+	a.link_menu_superior_n2,
+	a.link_menu_superior_n3 {
+    	font-size: 1em!important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.container {
+    	max-width: 100%;
+	}
+	.menuLateral {
+		padding-left: 0;
+	}
+	.menu_n2 {
+		padding-left: 16px;
+	}
+	.div_iconesJuris > div {
+		min-width: 33%;
+	}
+	.menumobSup ul.ativo {
+		display: block;
+	}
+	.menumobSup i {
+		line-height: normal;
+		font-size: 1.5em;
+	}
+	#dv_pesquisa_satisfacao .banner_ouvidoria { 
+	 	padding: 74px 1em 5em 1em; 
+	} 
+	.acesso_rapidoShow {
+		display: none;
+	}
+	.divPesqSatisfacao {
+		/*background-size: 50%;
+		padding-top: 40%;*/
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+    	max-width: 100%;
+	}
+	.menuLateral #menu_lateral{
+		display: none;
+	}
+	.menuLateral #menu_lateral.mostra_menu {
+		display: block;
+		top: 9.6em;
+	}
+	section.conteudo{
+    	width: 100%;
+    	padding: 0;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.divPesqSatisfacaoTitulo {
+ 		position:absolute;
+    	top: -22px;
+    	right: 9px;
+    }
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.menumob {
+		/*width: 100px;*/
+		padding: 0 0.5em;
+	}
+	.menumobSup {
+		display: inline-block; 
+	}
+	.menumobSup i {
+		font-size: 1.5em;
+/*		display: inline-block;
+		vertical-align: top;
+		margin-top:0.3em;*/
+	}
+	#menumobSup .modal-dialog {
+		min-width: 100%;
+	}
+	.process-barraSup .col-1,
+	.process-barraSup .col-11 {
+		padding:0;
+	}
+	.process-botoes {
+        margin-top: 0;
+    }
+    .juris_avisos .pl-5 {
+    	padding-left: 1em!important;
+    }
+    .juris_avisos .pr-5{
+    	padding-right: 1em!important;
+    }
+    .bar-acessibilidade-uteis .links {
+    	position: absolute;
+    	right: 0;
+    }
+    .comboInter_opcoes  {
+    	right: 0;
+    }
+    .p-xs-0 {
+    	padding: 0;
+    }
+    .clsPesquisaEdicoesJT {
+		padding: 0;
+    }
+	.clsTemasJT {
+		padding: 0;
+	}
+	.divJurisprudenciaTematicaLista {
+	    border: none;
+    	padding: 0em;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.labelM {
+		display: none;
+	}
+	.div_iconesJuris2_40 { 
+		min-width: 100%; 
+	} 
+	.div_iconesJuris2_40:nth-child(1) { 
+		background-color: rgba(191, 195, 198, 0.35); 
+	} 
+}

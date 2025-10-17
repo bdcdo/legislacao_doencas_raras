@@ -1,0 +1,75 @@
+@font-face {
+	 font-family:'Glyphicons Halflings';
+	 src:url(/recursos/fonts/glyphicons-halflings-regular.eot);
+	 src:url(/recursos/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+	 url(/recursos/fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+	 url(/recursos/fonts/glyphicons-halflings-regular.woff) format('woff'),
+	 url(/recursos/fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+	 url(/recursos/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.glyphicon {
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*barra com icones para navegacao*/
+.barraIconesNavegacao {
+	clear: both;
+	display: block;
+}
+.barraIconesNavegacao span,
+.barraIconesNavegacao a:link, 
+.barraIconesNavegacao a:active,
+.barraIconesNavegacao a:hover,
+.barraIconesNavegacao a:visited {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.barraIconesNavegacao span.glyphicon {
+	display: block;
+	font-size: 1.2em;
+	padding: 0.25em;
+	margin: 0;
+}
+.divJurisprudenciaTematicaLista .barraIconesNavegacao span.glyphicon {
+    font-size: 1.2em;
+    padding: 0;
+}
+.barraIconesNavegacao .iconePaginaAnterior span.glyphicon {
+	padding: 0.25em 0.35em 0.25em 0.15em;
+}
+.barraIconesNavegacao .iconeProximaPagina span.glyphicon {
+	padding: 0.25em 0.15em 0.25em 0.35em;
+}
+.barraIconesNavegacao .inativo span.glyphicon {
+	opacity: 0.5;
+}
+
+/* home: &#xe021; */
+/* menu: &#xe236; */
+/* lupa: &#xe003; */
+/* envelope: &#x2709; */
+.iconeVermelho {
+	color: #B2101D;
+}
+.iconeBranco {
+	color: #FFFFFF;
+}
+.iconeAzul {
+	color: #003F65;
+}
+.acoesdocumento .barraIconesNavegacao .iconeLupa { 
+	display: none;
+ }
+ .numeroDeDocumentos {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 3em;
+}

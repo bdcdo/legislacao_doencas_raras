@@ -1,0 +1,7495 @@
+/*
+.has-float-label input#pesquisaLivre + label {
+	display: none;
+}
+.has-float-label input#pesquisaLivre:focus + label {
+	font-size: 13px;
+	top: -0.5em;
+	display: inline-block;
+}
+*/
+button {
+	cursor: pointer;
+}
+
+.process-barraSup {
+	margin-top: -36px;
+	text-align: right;
+}
+/* Padroniza tipo de fonte, tamanho da fonte e espaçamento entre linhas */
+#corpopaginajurisprudencia select, #corpopaginajurisprudencia input,
+	#corpopaginajurisprudencia input[type=text], .juris-pesquisa select,
+	.juris-pesquisa input, .juris-pesquisa input[type=text] {
+	color: #656565;
+}
+
+th {
+	background-color: #c3d1d9;
+	font-size: 1.1em;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.clsIconesSumulas a {
+	text-decoration: none;
+}
+
+.clsIconesSumulas a img:hover {
+	opacity: 0.5;
+}
+
+.divJurisprudenciaTematicaFormulario, .divJurisprudenciaTematicaLista,
+	.corpoPaginaPesquisa, .corpoPaginaResultado, #corpopaginajurisprudencia,
+	.detalheDocumento {
+	font-family: Verdana;
+	font-size: 13px;
+	line-height: 1.5em;
+	color: #414F55;
+}
+.divJurisprudenciaTematicaLista {
+    border: 1px solid #DDDFE1;
+    border-radius: 12px;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+
+.corpoPaginaPesquisa {
+	max-width: 1440px;
+	margin: auto;
+}
+
+.corpoPaginaPesquisa a, .corpoPaginaPesquisa a:link,
+	.corpoPaginaPesquisa a:active, .corpoPaginaPesquisa a:visited,
+	.corpoPaginaPesquisa a:hover, .corpoPaginaResultado a,
+	.corpoPaginaResultado a:link, .corpoPaginaResultado a:active,
+	.corpoPaginaResultado a:visited, .corpoPaginaResultado a:hover,
+	#corpopaginajurisprudencia a, #corpopaginajurisprudencia a:link,
+	#corpopaginajurisprudencia a:active, #corpopaginajurisprudencia a:visited,
+	#corpopaginajurisprudencia a:hover {
+	color: #2465A4;
+}
+
+#corpopaginajurisprudencia .barraIconesNavegacao a,
+	#corpopaginajurisprudencia .barraIconesNavegacao a:link,
+	#corpopaginajurisprudencia .barraIconesNavegacao a:active,
+	#corpopaginajurisprudencia .barraIconesNavegacao a:visited,
+	#corpopaginajurisprudencia .barraIconesNavegacao a:hover,
+	.corpoPaginaResultado .barraIconesNavegacao a, .corpoPaginaResultado .barraIconesNavegacao a:link,
+	.corpoPaginaResultado .barraIconesNavegacao a:active,
+	.corpoPaginaResultado .barraIconesNavegacao a:visited,
+	.corpoPaginaResultado .barraIconesNavegacao a:hover {
+	color: #003F65;
+}
+
+.divJurisprudenciaTematicaLista .barraIconesNavegacao span.glyphicon {
+	font-size: 1.5em;
+	padding: 0.25em 0.15em 0.25em 0.35em;
+}
+
+.divJurisprudenciaTematicaLista .barraIconesNavegacao .paginaAtual {
+	padding: 0 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.onlyprint {
+	display: none;
+}
+
+.clsMensagemDeErro {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.highlightBrs, .HIGHLIGHTBRS {
+	color: #CE2424;
+	font-weight: bold;
+}
+.btnAbreMateria .highlightBrs {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.btnAbreMateria.collapsed .highlightBrs {
+	color: #2465A4!important;
+	font-weight: bold;
+}
+.corpoPaginaPesquisa .highlightBrs a, .corpoPaginaPesquisa .highlightBrs a:link,
+	.corpoPaginaPesquisa .highlightBrs a:hover, .corpoPaginaPesquisa .highlightBrs a:active,
+	.corpoPaginaPesquisa .highlightBrs a:visited,
+	#corpopaginajurisprudencia .highlightBrs a, #corpopaginajurisprudencia .highlightBrs a:link,
+	#corpopaginajurisprudencia .highlightBrs a:active,
+	#corpopaginajurisprudencia .highlightBrs a:hover,
+	#corpopaginajurisprudencia .highlightBrs a:visited, .highlightBrs a,
+	.highlightBrs a:link, .highlightBrs a:active, .highlightBrs a:hover,
+	.highlightBrs a:visited, .HIGHLIGHTBRS a, .HIGHLIGHTBRS a:visited {
+	color: #CE2424;
+	text-decoration: underline;
+}
+
+#corpopaginajurisprudencia .clsNavegacaoDocumento span,
+	#corpopaginajurisprudencia .clsNavegacaoDocumento a,
+	#corpopaginajurisprudencia .clsNavegacaoDocumento a:link,
+	#corpopaginajurisprudencia .clsNavegacaoDocumento a:active,
+	#corpopaginajurisprudencia .clsNavegacaoDocumento a:visited,
+	#corpopaginajurisprudencia .clsNavegacaoDocumento a:hover {
+	color: #FFFFFF;
+	padding-top: 2px;
+}
+
+.wrapper-form-juris>form {
+	width: 100%;
+	margin: auto;
+	max-width: 1187px;
+}
+
+.clsFormularioPesquisa {
+	font-size: 13px;
+}
+
+.juris-pesquisa input[type=text], .sum-pesquisa input[type=text] {
+	font-size: 13px;
+}
+/*- Estilos para tabelas e formulários -*/
+.divTable, .divTabela, .formularioDiv {
+	display: table;
+}
+
+.divRow, .divLinha, .linhaform {
+	display: table-row;
+}
+
+.divCell, .linhaform>div {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.documento .divTabela {
+	width: 100%;
+}
+/*Custom checkbox e radio*/
+
+/* The container */
+.customCheckbox {
+	overflow: auto;
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-height: 2em;
+}
+
+/* Hide the browser's default checkbox */
+.customCheckbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.customCheckbox .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #EEEEEE;
+	border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.customCheckbox:hover input ~ .checkmark {
+	background-color: #CCCCCC;
+	border-radius: 3px;
+}
+
+.customCheckbox input:focus ~ .checkmark {
+	border: 1px solid #87b7fe;
+}
+/* When the checkbox is checked, add a blue background */
+.customCheckbox input:checked ~ .checkmark {
+	background-color: #004164;
+	border-radius: 3px;
+	border: none;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.customCheckbox .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.customCheckbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.customCheckbox .checkmark:after {
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* The container */
+.customRadio {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.customRadio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.customRadio .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #CCCCCC;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.customRadio:hover input ~ .checkmark {
+	background-color: #C0C0C0;
+}
+
+/* When the radio button is checked, add a blue background */
+.customRadio input:checked ~ .checkmark {
+	background-color: #004164;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.customRadio .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customRadio input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customRadio .checkmark:after {
+	/*top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+*/
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/*-----------------------*/
+#idFormSumulas {
+	width: 100%;
+}
+
+#idBotoesOperadores {
+	/*	margin-top: 0.5em;*/
+	
+}
+
+.hintOperador {
+	position: absolute;
+	display: none;
+	color: rgb(86, 86, 86);
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	background-color: #FFFFFF;
+	padding: 1em;
+	margin-top: 0.5em;
+	z-index: 2;
+}
+
+.clsFormularioPesquisa .label {
+	color: rgb(36, 101, 164);
+}
+
+.clsFormularioPesquisa input[type=text] {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+.clsFormularioPesquisa select {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 6px 12px 7px 12px;
+	font-size: 1em;
+	border-radius: 4px;
+}
+
+.clsFormularioPesquisa select#nota {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.clsFormularioPesquisa #cod_tema_inicial,
+.clsFormularioPesquisa #cod_tema_final {
+	width: 12em;
+}
+
+.clsFormularioPesquisa .linhaform>div {
+	padding: 2px;
+}
+/*
+.clsFormularioPesquisa input[type=submit],
+.clsFormularioPesquisa input[type=button] {
+	font-size: 1em;
+}
+.clsFormularioPesquisa input[type=submit],
+.clsFormularioPesquisa input[type=button],
+.listadocumentos .clsSemFormatacao input[type=button],
+.detalheDocumento .clsSemFormatacao input[type=button] {
+    background-color:#c3d1d9;
+    color:#2465a4;
+}
+*/
+.listadocumentos .documento {
+	display: block;
+}
+/* Configurações específicas para a pesquisa da página principal*/
+#idMostrarPesquisaAvancadaRef2 {
+	display: none;
+	border: none;
+}
+
+#botaoLimparTodosFiltros {
+	margin: 0.5em;
+}
+
+#botaoLimparTodosFiltros.elementoVisivel {
+	display: block;
+}
+
+#idEsconderPesquisaAvancada i, #idMostrarPesquisaAvancada i {
+	/*	font-weight: bold;
+	font-size: 1.1em;*/
+	
+}
+
+#idMostrarConfiguracoes span, #idMostrarBotoesOperadores span {
+	/*	line-height: 33px;
+	color: #003F65;
+	font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;*/
+	
+}
+
+#idMostrarConfiguracoes, #idMostrarConfiguracoes2 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#idMostrarConfiguracoes .clsLabelMostrar, #idMostrarBotoesOperadores .clsLabelMostrar
+	{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostrarConfiguracoes.clsMostrar .clsLabelMostrar,
+	#idMostrarBotoesOperadores.clsMostrar .clsLabelMostrar {
+	display: none;
+}
+
+#idMostrarConfiguracoes .clsLabelOcultar, #idMostrarBotoesOperadores .clsLabelOcultar
+	{
+	display: none;
+}
+
+#idMostrarConfiguracoes.clsMostrar .clsLabelOcultar,
+	#idMostrarBotoesOperadores.clsMostrar .clsLabelOcultar {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostrarConfiguracoes .icofont-rounded-right,
+	#idMostrarBotoesOperadores .icofont-rounded-right {
+	/*	color: #003F65;*/
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostrarConfiguracoes.clsMostrar .icofont-rounded-right,
+	#idMostrarBotoesOperadores.clsMostrar .icofont-rounded-right {
+	display: none;
+}
+
+#idMostrarConfiguracoes .icofont-rounded-left,
+	#idMostrarBotoesOperadores .icofont-rounded-left {
+	/*	color: #003F65;*/
+	display: none;
+}
+
+#idMostrarConfiguracoes.clsMostrar .icofont-rounded-left,
+	#idMostrarBotoesOperadores.clsMostrar .icofont-rounded-left {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostrarConfiguracoes2 ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoesRef ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoes ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoesRef ~ #idDivConfiguracoesRef,
+	#idMostrarConfiguracoes ~ #idDivConfiguracoesRef,
+	#idMostrarBotoesOperadores ~ #idBotoesOperadores {
+	display: none;
+}
+
+#idMostrarConfiguracoes2.clsMostrar ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoesRef.clsMostrar ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoes.clsMostrar ~ #idDivConfiguracoes,
+	#idMostrarConfiguracoesRef.clsMostrar ~ #idDivConfiguracoesRef,
+	#idMostrarConfiguracoes.clsMostrar ~ #idDivConfiguracoesRef,
+	#idMostrarBotoesOperadores.clsMostrar ~ #idBotoesOperadores {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostrarConfiguracoesRef, #idMostrarConfiguracoes,
+	#idMostrarConfiguracoes2 {
+	position: relative;
+}
+
+#idDivConfiguracoesRef, #idDivConfiguracoes {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	width: 180px;
+	background-color: #ffffff;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #ced4da;
+	padding: 0.5em;
+	border-radius: 4px;
+	z-index: 40;
+}
+/*.formularioRefinamento #idDivConfiguracoes {
+	left: 105%;
+	top: 0%;
+	right: auto;
+}*/
+#idMostrarConfiguracoesRef+#idDivConfiguracoes,
+	#idMostrarConfiguracoesRef+#idDivConfiguracoesRef {
+	width: 200px;
+	font-size: 11px;
+}
+#idDivConfiguracoes {
+	z-index: 1000;
+}
+#idPesquisaAvancada {
+	width: 100%;
+	max-width: 970px;
+	margin: auto;
+	display: none;
+}
+
+#idPesquisaAvancada #divTabelaRefLeg {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#idPesquisaAvancada #configuracoesPesquisa, #idPesquisaAvancada #operadorPadrao
+	{
+	margin-left: 3em;
+	margin-top: 0.5em;
+}
+
+#idPesquisaAvancada #processo {
+	width: 100%;
+}
+
+#idPesquisaAvancada #relator {
+	width: 100%;
+}
+
+#idPesquisaAvancada #data_inicial, #idPesquisaAvancada #data_final {
+	width: 30.5%;
+}
+
+#idPesquisaAvancada #tipo_data {
+	width: 30%;
+	float: right;
+}
+
+#idPesquisaAvancada #orgao {
+	width: 100%;
+}
+
+#idPesquisaAvancada #ementa {
+	width: 100%;
+}
+
+#idPesquisaAvancada #siglajud {
+	width: 68%;
+}
+
+#idPesquisaAvancada #numero_leg {
+	width: 30%;
+	float: right;
+}
+
+#idPesquisaAvancada #tipo1, #idPesquisaAvancada #tipo2,
+	#idPesquisaAvancada #tipo3 {
+	width: 14%;
+}
+
+#idPesquisaAvancada #numero_art1, #idPesquisaAvancada #numero_art2,
+	#idPesquisaAvancada #numero_art3 {
+	width: 14.5%;
+}
+
+#idPesquisaAvancada #numero_art1, #idPesquisaAvancada #numero_art2,
+	#idPesquisaAvancada #numero_art3 {
+	margin-right: 1.2%;
+}
+
+#idPesquisaAvancada .siglajud {
+	width: 68%;
+}
+
+#idPesquisaAvancada .numero_leg {
+	width: 30%;
+	float: right;
+}
+
+#idPesquisaAvancada .tipo1, #idPesquisaAvancada .tipo2,
+	#idPesquisaAvancada .tipo3 {
+	width: 14%;
+}
+
+#idPesquisaAvancada .numero_art1, #idPesquisaAvancada .numero_art2,
+	#idPesquisaAvancada .numero_art3 {
+	width: 14.5%;
+}
+
+#idPesquisaAvancada .numero_art1, #idPesquisaAvancada .numero_art2,
+	#idPesquisaAvancada .numero_art3 {
+	margin-right: 1.2%;
+}
+/*
+#idPesquisaAvancada #maisRef {
+	float: right;
+	padding: 6px 8px;
+	margin-top: 1px;
+}
+*/
+#maisRef {
+	color: #003F65;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#idPesquisaAvancada #nota {
+	width: 100%;
+}
+
+#idPesquisaAvancada .clsColunaEsquerda {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+#idPesquisaAvancada .clsColunaDireita {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.clsTituloAvancada {
+	display: block;
+	margin-top: 1em;
+	padding: 4px;
+}
+
+#operadorPadrao .divCell {
+	padding: 4px 8px;
+}
+
+.btn_Tel img, .btn_Zap img {
+	/*width: 45px;
+	height: 45px;*/
+	
+}
+
+.divZap .btn-redondo-P, .divTel .btn-redondo-P {
+	margin-top: 0;
+}
+
+.divTel {
+	margin-top: 0;
+}
+
+.divZap {
+	margin-top: 1em;
+}
+
+#divIconeRamal {
+	font-size: 1em;
+}
+
+#divIconeRamal .glyphicon {
+	color: #FFFFFF;
+	background-color: rgba(59, 92, 125, 1);
+	border-radius: 50%;
+	font-size: 34px;
+	text-align: center;
+	width: 77px;
+	height: 77px;
+	padding: 0.5em;
+	text-shadow: 5px 8px 1px #34536d;
+}
+/* Coluna de pesquisa e filtros */
+#formRefinamento {
+	/*border-right:1px Solid rgba(229, 229, 229, 1);*/
+	/*width: 290px;*/
+	
+}
+/* Resultado da pesquisa */
+/*#resultadoPesquisa {
+	width: calc(100% - 300px);
+}*/
+.clsConteudoSemMenuLateral>h1.titulo {
+	margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.barraOutrasBasesWrapper {
+	display: block;
+	width: 100%;
+}
+
+.barraOutrasBases {
+	display: grid;
+/*	grid-template-columns: repeat(5, 1fr);*/
+	grid-template-columns: repeat(4, 1fr);
+	align-items: stretch;
+}
+
+.barraOutrasBases img {
+	width: 1em;
+	height: 1em;
+}
+
+.barraOutrasBases .tabBase>a, .barraOutrasBases .tabBase>span,
+	.barraOutrasBases .tabVazia>a, .barraOutrasBases .tabVazia>span {
+	height: 100%;
+	display: block;
+	vertical-align: middle;
+	padding: 1em 0.5em;
+	text-align: center;
+	font-family: Ubuntu, Arial, sans-serif;
+/*	font-size: 0.95em;*/
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #E6E6E6;
+	color: #444543;
+	text-transform: uppercase;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border: 1px solid #DDDFE1;
+	border-bottom: none;
+}
+
+.barraOutrasBases .tabBase a:hover, .barraOutrasBases .tabVazia a:hover
+	{
+	background-color: #D2D4D5;
+}
+
+.barraOutrasBases a, .barraOutrasBases a:hover {
+	text-decoration: none;
+}
+
+.barraOutrasBases .ativo>a, .barraOutrasBases .ativo>span,
+	.barraOutrasBases .ativo>a, .barraOutrasBases .ativo>span {
+	background-color: #F9F9F9;
+	/*	padding-top: 1.2em;*/
+}
+
+#idListaOutrosProdutos.ativo {
+	background-color: #F9F9F9;
+}
+
+#idListaOutrosProdutos {
+	position: relative;
+	z-index: 1;
+	background-color: #E6E6E6;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+#idListaOutrosProdutos a {
+	display: block;
+}
+
+#idListaOutrosProdutos ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #F9F9F9;
+	border-right: 1px solid #DDDFE1;
+	border-left: 1px solid #DDDFE1;
+	border-bottom: 1px solid #DDDFE1;
+	right: 0;
+	left: auto;
+	width: fit-content;
+	white-space: nowrap;
+	min-width: 100%;
+}
+
+#idListaOutrosProdutos li {
+	display: block;
+}
+
+#idListaOutrosProdutos li a {
+	padding: 0.5em 1em;
+}
+
+#idListaOutrosProdutos li:hover, #idListaOutrosProdutos li a:hover {
+	font-weight: bold;
+}
+
+#mostraOutrosProdutos {
+	cursor: pointer;
+	/*display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;*/
+}
+
+a#mostraOutrosProdutos > span {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: calc(100% - 1em);
+}
+a#mostraOutrosProdutos > i {
+	display: inline-block;
+	vertical-align: middle;
+}
+.divNavegaInfo {
+	background-color: #F9F9F9;
+	overflow: auto;
+	font-size: 10pt;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+div#divCriterioDePesquisa {
+	display: inline-block;
+}
+
+#navegacao {
+	text-align: right;
+	white-space: nowrap;
+}
+
+#navegacao>div {
+	display: inline-block;
+}
+
+#navegacao.barraEnunciados {
+	width: auto;
+}
+
+#infopesquisa {
+	padding: 1em 1em 0 1em;
+	display: block;
+}
+
+#infopesquisa .divCell {
+	vertical-align: top;
+}
+
+#infopesquisa label {
+	font-weight: bold;
+	margin-right: 1em;
+	white-space: nowrap;
+}
+
+#infopesquisa #divCriterioDePesquisa {
+	max-height: 3em;
+	overflow: auto;
+}
+
+#infopesquisa #divCriterioDePesquisa:hover {
+	height: auto;
+	max-height: 100%;
+	overflow: auto;
+}
+
+#infopesquisa #divCriterioDePesquisa.pp {
+	height: auto;
+	max-height: 100%;
+}
+
+.barraIconesNavegacao a {
+	color: #003f65;
+}
+
+#listaSumulas.listadocumentos {
+	margin: 0.5em;
+	max-height: 100%; /*calc(100vh - 400px);*/
+}
+
+.listadocumentos h3 {
+	background-color: #003f65;
+	color: #FFFFFF;
+	display: block;
+	font-size: 1.5em;
+	padding: 0.25em;
+	text-align: center;
+}
+
+.listadocumentos h3 a, .listadocumentos h3 a:link, .listadocumentos h3 a:active,
+	.listadocumentos h3 a:visited, .listadocumentos h3 a:hover {
+	color: #FFFFFF;
+}
+
+.listadocumentos .clsSemFormatacao, .detalheDocumento .clsSemFormatacao,
+	.clsDivClipboard {
+	position: absolute;
+	display: none;
+	background-color: #dfe7ed;
+	padding: 0.5em;
+	left: 0;
+	z-index: 2;
+	margin: 0.5em 2em;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.listadocumentos .clsSemFormatacao textarea, .detalheDocumento .clsSemFormatacao textarea,
+	.clsDivClipboard textarea {
+	font-size: 1em;
+	border: 1px solid #a0a0a0;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.clsDivClipboard textarea {
+	width: 100%;
+	border: none;
+	overflow: hidden;
+	font-size: 11px;
+	background-color: transparent;
+}
+
+.listadocumentos .clsSemFormatacao {
+	max-width: 95%;
+}
+
+.listadocumentos .clsSemFormatacao textarea {
+	max-width: 100%;
+}
+
+.clsDivClipboard {
+	left: auto;
+	right: 0;
+	width: 400px;
+}
+
+.clsHint {
+	font-size: 0.85em;
+	font-weight: normal;
+	display: none;
+}
+
+.clsHint h4 {
+	font-size: 1.1em;
+	background-color: transparent;
+}
+
+.showHint:hover .clsHint {
+	display: block;
+}
+
+.hideHint:hover .clsHint {
+	display: none;
+}
+
+.acoesdocumento {
+	margin-top: 0.5em;
+}
+
+.acoesdocumento .iconeLupa {
+	display: none;
+}
+
+.acoesdocumento a {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 0.5em 2em;
+}
+
+.acoesdocumento .divCell {
+	vertical-align: top;
+}
+
+.acoesdocumento .divCell a {
+	/*max-width: 190px;*/
+	
+}
+
+.acoesdocumento .icones {
+	white-space: nowrap;
+}
+
+.acoesdocumento .barraIconesNavegacao {
+	display: block;
+	float: right;
+}
+
+.acoesdocumento .barraIconesNavegacao a {
+	font-size: 1em;
+	padding: 0;
+}
+
+.acoesdocumentoSuce {
+	display: block;
+}
+
+.acoesdocumentoSuce a {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 0.5em 2em;
+}
+
+.tituloDocumento {
+	font-family: Ubuntu, Arial, sans-serif;
+	background-color: #003f65;
+	color: #FFFFFF;
+	display: block;
+	font-size: 1.5em;
+	padding: 0 1em;
+	text-align: left;
+	height: 3em;
+	line-height: 3em;
+}
+
+#corpopaginajurisprudencia .tituloDocumento a,
+	#corpopaginajurisprudencia .tituloDocumento a:link,
+	#corpopaginajurisprudencia .tituloDocumento a:active,
+	#corpopaginajurisprudencia .tituloDocumento a:visited,
+	#corpopaginajurisprudencia .tituloDocumento a:hover {
+	color: #FFFFFF;
+}
+
+.tituloDocumento .iconesAcoes {
+	float: right;
+	min-width: 160px;
+}
+
+.tituloDocumento img {
+	height: 2em;
+}
+
+.docTitulo {
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Ubuntu, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.docTexto {
+	padding: 0.5em 2em;
+	font-size: 1em;
+	position: relative;
+}
+
+.corpoPaginaResultado pre, .docTexto pre, .docTexto p {
+	font-family: Verdana;
+	font-size: 1em;
+	padding: 0.5em 0;
+	margin: 0;
+	/*	text-align: justify;*/
+}
+.docTexto pre {
+	max-width: 1000px;
+}
+
+.docTexto pre:nth-child(1), .docTexto p:nth-child(1) {
+	padding-top: 0;
+}
+
+.docTexto pre:last-child, .docTexto p:last-child {
+	padding-bottom: 0;
+}
+
+.barraDocAfetacao, .barraDocRepetitivo {
+	display: grid;
+	background-color: #B2101D;
+	color: #FFFFFF;
+	padding: 0.25em 1em 0.25em 78px;
+	position: relative;
+	margin: 1em auto;
+	width: calc(100% - 58px);
+	border-radius: 12px;
+	min-height: 105px;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.barraDocAfetacao {
+	background-color: #D8B300;
+	min-height: 114px;
+	padding-left: 83px;
+}
+
+.indicaRepetitivo {
+	background-color: #B2101D;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0.25em 2em;
+	margin-bottom: 1em;
+	display: inline-block;
+	width: fit-content;
+}
+
+.indicaRepetitivo.teseSuperada {
+	background-color: #DDDFE1;
+	color: #444543;
+}
+
+.indicaAfetacao {
+	background-color: #D8B300;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0.25em 2em;
+	margin-bottom: 1em;
+	display: inline-block;
+	width: fit-content;
+}
+
+.indicaIAC {
+	background-color: #B2101D;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0.25em 2em;
+	margin-bottom: 1em;
+	display: inline-block;
+	width: fit-content;
+}
+
+.indicaAdmissao {
+	background-color: #B2101D;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0.25em 2em;
+	margin-bottom: 1em;
+	display: inline-block;
+	width: fit-content;
+}
+
+#corpopaginajurisprudencia .barraDocRepetitivo a:link,
+	#corpopaginajurisprudencia .barraDocRepetitivo a:active,
+	#corpopaginajurisprudencia .barraDocRepetitivo a:hover,
+	#corpopaginajurisprudencia .barraDocRepetitivo a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#corpopaginajurisprudencia .barraDocAfetacao a,
+	#corpopaginajurisprudencia .barraDocAfetacao a:visited {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+.iconeBarraDocAfetacao, .iconeBarraDocRepetitivo {
+	display: block;
+	position: absolute;
+	left: -58px;
+	top: -10px;
+	border: 10px solid #FFFFFF;
+	border-radius: 50%;
+	padding: 30px;
+}
+
+.iconeBarraDocAfetacao img, .iconeBarraDocRepetitivo img {
+	
+}
+
+.bannerTexto {
+	align-self: center;
+}
+
+.bannerTexto h4 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+.iconeBarraDocAfetacao {
+	background-color: #D8B300;
+}
+
+.iconeBarraDocRepetitivo {
+	background-color: #B2101D;
+}
+
+.barraTeseSuperada .iconeBarraDocRepetitivo {
+	background-color: #DDDFE1;
+}
+
+.barraTeseSuperada {
+	background-color: #DDDFE1;
+	color: #444543;
+	position: relative;
+}
+
+.barraTeseSuperada a, .barraTeseSuperada a:visited {
+	color: #444543;
+}
+
+.barraTeseSuperada h4 {
+	color: #444543;
+}
+
+.linkListaTodosOsSucessivos {
+	display: block;
+	padding: 0.5em 0;
+	cursor: pointer;
+}
+
+.linkListaTodosOsSucessivos .glyphicon {
+	margin-right: 0.25em;
+}
+
+.divListaTodosOsSucessivos {
+	display: none;
+}
+/*Form refinamento*/
+a.botaoEscondeFiltro {
+	display: block;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+a.botaoMostraFiltro {
+	display: block;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.2em;
+}
+
+a.botaoMostraFiltro:link, a.botaoMostraFiltro:visited, a.botaoMostraFiltro:active,
+	a.botaoMostraFiltro:hover {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+	color:rgba(59, 92, 125, 1);
+}
+
+a.botaoMostraFiltro .filtroUp, a.botaoMostraFiltro #filtroRamoUp, a.botaoMostraFiltro #filtroMinUp,
+	a.botaoMostraFiltro #filtroOrgUp {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+a.botaoEscondeFiltro .filtroUp, a.botaoEscondeFiltro #filtroRamoUp, a.botaoEscondeFiltro #filtroMinUp,
+	a.botaoEscondeFiltro #filtroOrgUp {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+a.botaoEscondeFiltro:link, a.botaoEscondeFiltro:visited, a.botaoEscondeFiltro:active,
+	a.botaoEscondeFiltro:hover {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+	color:rgba(59, 92, 125, 1);
+}
+
+a.botaoEscondeFiltro .filtroDown, a.botaoEscondeFiltro #filtroRamoDown,
+	a.botaoEscondeFiltro #filtroMinDown, a.botaoEscondeFiltro #filtroOrgDown
+	{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+a.botaoMostraFiltro .filtroDown, a.botaoMostraFiltro #filtroRamoDown, a.botaoMostraFiltro #filtroMinDown,
+	a.botaoMostraFiltro #filtroOrgDown {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.botaoMostraFiltro+.clsConteudoFiltro {
+	display: none;
+}
+
+.botaoEscondeFiltro+.clsConteudoFiltro {
+	display: block;
+}
+
+.clsConteudoFiltro {
+	padding: 0;
+	margin: 0;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsConteudoFiltro .textoExplicativo {
+	display: block;
+	padding: 0.5em;
+}
+
+.clsConteudoFiltro ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.clsConteudoFiltro ul ul {
+	padding-left: 10px;
+}
+.clsConteudoFiltro ul li {
+	display: block;
+}
+
+.clsConteudoFiltro li a span,
+.clsConteudoFiltro li span {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 2px;
+	max-width: 90%;
+}
+
+.clsConteudoFiltro li a {
+	display: block;
+	text-decoration: none;
+	height: 2.2em;
+}
+
+.clsConteudoFiltro li i,
+.clsConteudoFiltro li a i {
+	font-size: 1.5em;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+	margin-right: 3px;
+	color: #053F65;
+}
+
+.clsConteudoFiltro select {
+	width: 100%;
+}
+
+.clsConteudoFiltro #data_inicialRef, .clsConteudoFiltro #data_finalRef {
+	width: 40%;
+}
+
+.clsConteudoFiltro input[type=text] {
+	padding: 2px 5px;
+	font-size: 0.85em;
+	margin: 2px 0;
+	border-radius: 4px;
+}
+
+#formRefinamento #configuracoesPesquisa select {
+	padding: 4px 2px;
+	font-size: 0.85em;
+	margin: 2px 0;
+	border-radius: 4px;
+}
+
+#formRefinamento .customCheckbox {
+	/*font-size: 0.85em;*/
+	
+}
+
+#formRefinamento ul {
+	padding: 0;
+	margin: 0;
+}
+
+#formRefinamento li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.invisivel {
+	display: none;
+}
+
+#formRefinamento li.invisivel {
+	display: none;
+}
+
+#formRefinamento label.customCheckbox {
+	display: block;
+}
+
+#formRefinamento .indiceSumulas li {
+	padding: 0.25em 1em;
+}
+
+#formRefinamento .indiceSumulas li .glyphicon {
+	margin-right: 0.5em;
+}
+
+#formRefinamento label.customCheckbox span.nomeFiltro {
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+	font-size: 0.9em;
+}
+
+#formRefinamento label.customCheckbox span.qtdDocs {
+	display: block;
+	float: right;
+	vertical-align: top;
+	width: 30%;
+}
+
+.clsFiltrarResultados {
+	display: block;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.clsFiltrarResultados a {
+	display: block;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsControlaFiltros {
+	/*overflow: auto;*/
+	
+}
+
+.clsControlaFiltros a {
+	cursor: pointer;
+	float: right;
+	display: block;
+	padding: 0.25em;
+	font-size: 1.1em;
+}
+
+#filtroMinistro ul {
+	max-height: 28em;
+	overflow-y: auto;
+}
+
+#formRefinamento .botaoMostraFiltro img {
+	width: 22px;
+	height: 22px;
+}
+
+#limpaFiltroRamos, #limpaFiltroOrgaos, #limpaFiltroRepetitivos,
+	#limpaFiltroMinistros, #aplicaFiltroRamos, #aplicaFiltroOrgaos,
+	#aplicaFiltroRepetitivos, #aplicaFiltroMinistros {
+	cursor: pointer;
+	float: right;
+	display: block;
+	padding: 0.25em;
+	font-size: 1.1em;
+}
+
+.linhaPar {
+	background-color: #FFFFFF;
+}
+
+.linhaImpar {
+	background-color: #EEEEEF;
+}
+
+.itemlistadocumentos {
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+.itemlistadocumentos>div {
+	padding: 0.5em 0.25em;
+	font-size: 1em;
+}
+
+.itemlistadocumentos .divCell:nth-child(1) {
+	width: 80px;
+}
+
+.itemlistadocumentos .divCell:nth-child(2) {
+	width: 180px;
+}
+
+.itemlistadocumentos .divCell:nth-child(3) {
+	width: auto;
+}
+
+.labelTeseRevisada {
+	float: right;
+	font-weight: bold;
+	position: relative;
+}
+
+.barraDocRepetitivo div.hintTeseRevisada, .hintTeseRevisada {
+	position: absolute;
+	display: none;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	background-color: #E6E6E6;
+	padding: 1em;
+	z-index: 2;
+	top: 100%;
+	font-weight: normal;
+	border-radius: 12px;
+	width: 300px;
+	border: 1px solid #DDDFE1;
+}
+
+.clsDivTeseRevisada {
+	position: relative;
+	float: left;
+	height: 156px;
+}
+
+.hintTeseRevisada h4 {
+	color: #00658A;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.hintTeseRevisada .destaqueTeseSuperada {
+	color: #179AB4;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.seloTese {
+	height: 156px;
+	width: auto;
+}
+
+.seloTese:hover+.hintTeseRevisada {
+	display: block;
+}
+
+.divVejaRepetitivos {
+	margin-top: 1em;
+}
+
+.divVejaRepetitivos+.divVejaRepetitivos {
+	margin-top: 0;
+}
+
+.corpoPaginaPesquisa {
+	font-size: 13px;
+	line-height: 1.3em;
+	background: rgba(191, 195, 198, 0.10);
+	padding: 2em;
+}
+
+#linkFeed {
+	float: right;
+	display: block;
+	margin-top: -2em;
+	font-size: 13px;
+}
+
+.corpoPaginaResultado .formularioDiv {
+	width: 90%;
+	margin: auto;
+}
+
+.corpoPaginaPesquisa .linhaform>div, .corpoPaginaResultado .linhaform>div
+	{
+	padding: 0.5em;
+}
+
+.corpoPaginaPesquisa .label, .corpoPaginaResultado .label {
+	color: rgb(36, 101, 164);
+}
+
+.corpoPaginaPesquisa input[type=text], .corpoPaginaResultado input[type=text]
+	{
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	/*width: 90%;*/
+	/*padding: 9px 15px;*/
+}
+
+.corpoPaginaPesquisa select, .corpoPaginaResultado select {
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	width: 90%;
+}
+
+.corpoPaginaPesquisa .blocoCampos span, .corpoPaginaResultado .blocoCampos span
+	{
+	display: inline-block;
+	padding: 0.5em;
+}
+
+.corpoPaginaPesquisa input[type=button], .corpoPaginaPesquisa input[type=submit],
+	.corpoPaginaPesquisa input[type=reset], .corpoPaginaResultado input[type=button],
+	.corpoPaginaResultado input[type=submit], .corpoPaginaResultado input[type=reset]
+	{
+	background-color: #c3d1d9;
+	color: #2465a4;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+.corpoPaginaPesquisa .divInformacoes {
+	line-height: 1.5em;
+	margin-top: 2em;
+}
+
+.corpoPaginaResultado #infopesquisa {
+	float: none;
+	display: block;
+}
+
+.corpoPaginaResultado pre a {
+	color: #00658A;
+}
+
+.textoAviso {
+	padding: 1em;
+	text-align: left;
+	font-size: 12pt;
+}
+
+.textoAviso a {
+	text-decoration: none;
+}
+
+.textoAviso .glyphicon {
+	color: #00658A;
+}
+
+.divJurisprudenciaTematicaFormulario h3 {
+	font-size: 1.5em;
+	background-color: #dfe7ed;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.divJurisprudenciaTematicaFormulario .col-md-6 .label {
+	width: 35%;
+}
+
+.divJurisprudenciaTematicaFormulario .col-md-6 .col-md-12 {
+	height: 50%;
+}
+
+.divJurisprudenciaTematicaLista .label {
+	width: 20%;
+}
+
+.divJurisprudenciaTematicaFormulario input[type=text],
+	.divJurisprudenciaTematicaFormulario select,
+	.divJurisprudenciaTematicaLista input[type=text],
+	.divJurisprudenciaTematicaLista select {
+	width: 100%;
+}
+
+.divBloco {
+	padding: 1em;
+	border-radius: 12px;
+}
+
+.divBloco>h3 {
+	border-top: 1px Solid rgba(229, 229, 229, 1);
+	border-left: 1px Solid rgba(229, 229, 229, 1);
+	border-right: 1px Solid rgba(229, 229, 229, 1);
+	margin-bottom: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.divBloco>div {
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.divBloco>div, .divBloco>table.tabelaSumario {
+	border-bottom: 1px Solid rgba(229, 229, 229, 1);
+	border-left: 1px Solid rgba(229, 229, 229, 1);
+	border-right: 1px Solid rgba(229, 229, 229, 1);
+	padding: 1em;
+	height: calc(100% - 3em);
+	background-color: #FFFFFF;
+}
+
+.divBloco>table.tabelaSumario {
+	width: 100%;
+}
+
+.divJurisprudenciaTematicaFormulario .col-md-12 .formularioDiv {
+	width: 90%;
+	margin: auto;
+}
+
+.divJurisprudenciaTematicaFormulario .col-md-12 .formularioDiv .label {
+	width: 25%;
+}
+
+.tabelaSumario td {
+	padding: 0.5em;
+}
+
+.divBloco img {
+	width: 60px;
+}
+
+.divJurisprudenciaTematicaLista .barraIconesNavegacao {
+	background-color: #f9f9f9;
+	margin: 1em 0;
+	padding: 0.5em 1em;
+	border-radius: 6px;
+}
+
+.divJurisprudenciaTematicaListaPP .barraIconesNavegacao {
+	margin: 0;
+}
+
+.divMateria {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #003f65;
+	padding: 0.5rem;
+	line-height: 1.3em;
+}
+
+.divTitulo {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #003f65;
+	padding: 0.5rem;
+	margin-left: 2rem;
+}
+
+.divMateria a, .divTitulo a {
+	color: #003f65 !important;
+}
+
+h4.tituloCampo {
+	font-size: 13px;
+}
+
+.mostraTituloNota {
+	position: relative;
+}
+
+.tituloNota {
+	display: none;
+	position: absolute;
+	background-color: #27a1b9;
+	color: #FFFFFF;
+	padding: 1em 1.5em;
+	border-radius: 4px;
+	z-index: 30;
+	left: 2em;
+	margin-top: 0.5em;
+	text-align: left;
+	min-width: 300px;
+	line-height: 1.5em;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.tituloNota:before {
+	border-bottom: 8px solid #27a1b9;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -6px;
+	left: 1em;
+}
+
+.texto_apresentacaoPP {
+	display: grid;
+	grid-template-columns: auto auto;
+	min-height: 125px;
+}
+
+.texto_apresentacaoPP>div {
+	align-self: center;
+	padding: 1em;
+}
+
+.texto_apresentacao {
+	line-height: 1.5em;
+}
+
+.texto_apresentacao span {
+	display: inline-block;
+	vertical-align: middle;
+	/*max-width: 80%;*/
+}
+
+.texto_apresentacao span.iconeInformativoJurisprudencia {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+	margin-top: 0;
+	background:
+		url(/recursos/interfacevisual/internet2022/img/icon_informativo.svg)
+		no-repeat;
+	background-size: 100px 100px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #f5af00;
+}
+
+.texto_apresentacao span.btn_pesqPront {
+	margin-right: 8px;
+}
+
+.corpoPaginaResultado {
+	margin: 1em 0;
+	background-color: #F9F9F9;
+	padding: 1em 2em;
+	border: 1px solid #DDDFE1;
+}
+
+.divListaAcordaos {
+	margin: 0;
+}
+
+.corpoPaginaResultado .listadocumentos .docTexto, .corpoPaginaResultado .listadocumentos .docTitulo
+	{
+	max-width: 700px;
+	margin: auto;
+}
+
+#configVisualizacao {
+	clear: both;
+	display: block;
+	padding: 1em;
+}
+
+#configVisualizacao input[type=button], #configVisualizacao select,
+	#configVisualizacao label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#configVisualizacao select {
+	padding: 5px 5px 6px 5px;
+	color: #414F55;
+}
+
+#configVisualizacao label {
+	margin: 0;
+}
+
+.clsBtnOrdenacaoJT, #corpopaginajurisprudencia #tp_ord_num_asc,
+	#corpopaginajurisprudencia #tp_ord_num_desc, #corpopaginajurisprudencia #tp_ord_mat,
+	#corpopaginajurisprudencia #tp_vis_lista_resumida,
+	#corpopaginajurisprudencia #tp_vis_documento_completo {
+	display: inline-block;
+	color: #FFFFFF;
+	background-color: #C3D1D9;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.5em;
+	padding: 0.25em 0.5em;
+}
+
+.clsBtnOrdenacaoJT.ativo, #corpopaginajurisprudencia #tp_ord_num_asc.ativo,
+	#corpopaginajurisprudencia #tp_ord_num_desc.ativo,
+	#corpopaginajurisprudencia #tp_ord_mat.ativo,
+	#corpopaginajurisprudencia #tp_vis_lista_resumida.ativo,
+	#corpopaginajurisprudencia #tp_vis_documento_completo.ativo {
+	color: #003F65;
+}
+
+.divAjuda {
+	float: right;
+}
+
+.divAjuda span.glyphicon {
+	font-size: 24px;
+}
+
+.clsJulgadosJT {
+	padding: 0.5em 2em;
+}
+
+.labelSaibaMais {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	/*margin-left: 1em;*/
+	text-transform: uppercase;
+}
+
+.labelSaibaMais span {
+	text-transform: none;
+}
+
+#divArquivosDownload {
+	text-align: center;
+}
+
+.divLinkPesquisa {
+	text-align: right;
+	font-style: italic;
+	padding: 1em;
+}
+
+.divJurisprudenciaTematicaLista .divTema {
+	font-weight: bold;
+	padding: 0.5rem;
+	margin-left: 4rem;
+}
+
+.divJurisprudenciaTematicaLista .divTema span b {
+	display: block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.divJurisprudenciaTematicaLista .divTema pre {
+	text-align: justify;
+}
+
+.divJurisprudenciaTematicaLista .divObservacoes {
+	font-style: italic;
+	padding: 0.5rem;
+	margin-left: 4rem;
+}
+
+.divJurisprudenciaTematicaLista .divLinkPesquisa {
+	line-height: 1em;
+	font-style: italic;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-align: right;
+}
+
+.paginaPesquisaPronta .colunaRefinamento {
+	font-size: 13px;
+}
+
+.divJurisprudenciaTematicaLista .temas {
+	text-align: justify;
+	margin: 0 7rem;
+}
+
+.divJurisprudenciaTematicaLista .temas p {
+	padding: 0 0.5rem;
+}
+
+.divJurisprudenciaTematicaLista .divPrecedentes {
+	margin: 0 5%;
+	line-height: 1.8em;
+}
+
+.divPrecedentes h4 {
+	text-align: left;
+	padding: 0.5em 0;
+}
+
+.docRepetitivo, .listadocumentos .docRepetitivo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 45%;
+}
+
+.saibaMais {
+	line-height: 1.8em;
+	text-align: left;
+	/*    font-size: 0.9em;
+    margin: 1em 5% 1em 10%;*/
+    margin: 1em;
+}
+
+.saibaMais ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.saibaMais .tituloCampo {
+	font-weight: bold;
+	text-align: left;
+	font-size: 1em;
+	margin: 0;
+}
+
+.listaReferencias li {
+	margin-bottom: 1em;
+}
+
+.divTema ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.divJurisprudenciaTematicaLista h2 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.divArtigo {
+	padding: 1em 5% 0 5%;
+}
+
+.mensagemReproducaoAutorizada {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.contadorDeAcessos {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.divJurisprudenciaTematicaLista h2.tituloIndice {
+	font-size: 2em;
+}
+
+.tituloIndice+.textoExplicativo {
+	text-align: center;
+	font-style: italic;
+}
+input[type=text].clearable {
+	padding-right: 3em;
+}
+/* Clearable text inputs */
+.clearable {
+	background: #fff url("/recursos/imagens/x-close.png") no-repeat right
+		-27px center;
+	transition: background 0.4s;
+}
+
+.clearable.x {
+	background-position: right 5px center;
+} /* (jQ) Show icon */
+.clearable.onX {
+	cursor: pointer;
+} /* (jQ) hover cursor style */
+.clearable::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+} /* Remove IE default X */
+.divAjuda {
+	text-align: right;
+	padding: 0.5em;
+}
+
+.divAjuda .mensagem {
+	display: block;
+	text-align: left;
+}
+
+.divAjuda .mensagem span {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.divAjuda .mensagem span.atencao {
+	color: #CE2424;
+	font-weight: bold;
+}
+
+.divListaAcordaos td, .divListaAcordaos th {
+	padding: 0.5em;
+}
+/* formulário de pesquisa de súmulas */
+.opcoesSumulas {
+	padding: 1em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 8em;
+}
+
+.opcoesSumulas a {
+	color: rgb(36, 101, 164);
+	font-size: 1.2em;
+	font-weight: bold;
+	/*display: block;*/
+	display: inline-block;
+}
+
+.opcoesSumulas span {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.5em;
+	width: 242px;
+	padding: 0.5em;
+	white-space: normal;
+}
+
+.opcoesSumulas span.glyphicon {
+	padding: 0;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	line-height: 25px;
+	width: auto;
+	max-width: 100%;
+	text-align: center;
+	display: block!important;
+}
+
+
+.opcoesSumulas #idEnunciados span.glyphicon {
+	background-color: #00658A;
+}
+
+.opcoesSumulas #idSumulas span.glyphicon {
+	background-color: #00258a;
+}
+
+.opcoesSumulas #idCanceladas span.glyphicon {
+	background-color: #CE2424;
+}
+
+.opcoesSumulas #idAnotadas span.glyphicon {
+	background-color: #1F5836;
+}
+
+.downloadSumulas {
+	padding: 1em;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.downloadSumulas a {
+	color: rgb(36, 101, 164);
+	font-size: 1.1em;
+	text-align: center;
+	display: block;
+}
+
+.downloadSumulas span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#filtroSumulas {
+	margin-top: 2em;
+}
+
+#filtroSumulas .divCell {
+	padding: 0.5em;
+}
+
+.listadocumentos.enunciadosSumulas .divTitulo {
+	background-color: #c3d1d9;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.listadocumentos.enunciadosSumulas .divMateria {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.listadocumentos.enunciadosSumulas .divTema:nth-child(even) {
+	background-color: #EEEEEF;
+	padding: 1em;
+}
+
+.listadocumentos.enunciadosSumulas .divTema:nth-child(odd) {
+	background-color: #FFFFFF;
+	padding: 1em;
+}
+
+#divOrdenacao, #ordenacao {
+	padding: 1em;
+	display: block;
+	float: left;
+	width: auto;
+	text-align: left;
+}
+
+#divOrdenacao select, #ordenacao select {
+	padding: 8px 12px 8px 12px;
+}
+
+#divOrdenacao select, #divOrdenacao label, #ordenacao select, #ordenacao label
+	{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#divOrdenacao+#navegacao, #ordenacao+#navegacao {
+	clear: none;
+}
+
+#divOrdenacao a, #divOrdenacao a:link, #divOrdenacao a:active,
+	#divOrdenacao a:visited, #divOrdenacao a:hover, #ordenacao a,
+	#ordenacao a:link, #ordenacao a:active, #ordenacao a:visited,
+	#ordenacao a:hover {
+	font-size: 1.2em;
+	display: inline-block;
+	background-color: #FFFFFF;
+	color: #656565;
+	border: solid 1px rgba(191, 195, 198, 0.8);
+	border-radius: 4px;
+	padding: 0;
+}
+
+#listaSumulas .divMateria, #listaSumulas .divTitulo {
+	margin: 0;
+}
+
+.detalheDocumento .tituloDocumento {
+	background-color: transparent;
+	color: #003f65;
+}
+
+.ui-widget-content .documento a {
+	color: #2465A4;
+}
+
+.ui-dialog-titlebar {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #003f65;
+	font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	background-image:
+		url('/recursos/imagens/glyphicons-halflings-white.png');
+	background-position: -310px 2px;
+	background-color: transparent;
+	border: none;
+	width: 18px;
+	height: 18px;
+}
+
+.iconesAcoesSumulas {
+	font-size: 2em;
+	float: right;
+	margin-top: 0.5em;
+}
+
+.ui-widget-content .documento .iconesAcoesSumulas a {
+	color: #003f65;
+}
+
+.ramoSumula {
+	display: block;
+	padding: 0.5em 0;
+	font-weight: bold;
+}
+
+.numeroSumula .highlightBrs {
+	font-weight: bold;
+	color: #004164;
+}
+
+.juris_avisos a {
+	color: #FFFFFF;
+}
+
+.juris_avisos .t-amarelo {
+	color: #F5AF00;
+}
+
+#divNenhumDocumentoPP {
+	max-width: 800px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 'head head' 'mens img';
+	border: 1px solid #DDDFE1;
+	border-radius: 12px;
+}
+
+#divNenhumDocumentoPP .tituloMensagemPP {
+	grid-area: head;
+	background-color: #003f65;
+	color: #FFFFFF;
+	padding: 1em;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+#divNenhumDocumentoPP .blocoMensagemPP {
+	grid-area: mens;
+	align-self: center;
+	justify-self: center;
+	font-size: 1.2em;
+}
+
+#divNenhumDocumentoPP .blocoImagemPP {
+	grid-area: img;
+	align-self: center;
+	justify-self: center;
+}
+
+#paginaajuda {
+	margin: 2em;
+}
+
+#paginaajuda .alerta {
+	padding: 1em;
+}
+
+#paginaajuda h3 {
+	font-size: 1.8em;
+	margin: 1em 0;
+	background-color: #c3d1d9;
+	padding: 1em;
+}
+
+#paginaajuda h4 {
+	font-size: 1.5em;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+#paginaajuda table {
+	width: 100%;
+}
+
+#paginaajuda th, #paginaajuda td {
+	padding: 0.5em;
+}
+
+#paginaajuda p {
+	padding: 0.5em 1em;
+	margin: 0;
+}
+
+#paginaajuda .link {
+	text-align: right;
+	display: block;
+	margin-top: 1em;
+}
+
+.clsCaptchaLinha, #idCaptchaLinha {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#formPesquisaThesaurus {
+	width: 90%;
+}
+
+#divListaTermosThesaurus {
+	display: block;
+	margin-top: 2em;
+}
+
+#divListaTermosThesaurus .divTabela {
+	width: 90%;
+}
+
+#divListaTermosThesaurus .divTabelaHeader {
+	font-weight: bold;
+	padding: 0.5em;
+	background-color: #c3d1d9;
+	/*width: 90%;*/
+}
+
+#divListaTermosThesaurus .divTabela .divCell {
+	padding: 0.5em;
+}
+
+#divListaTermosThesaurus .divTabela .divCell:nth-child(1) {
+	width: 30%;
+}
+
+#divListaTermosThesaurus .divTabela .divCell:nth-child(2) {
+	width: 10%;
+}
+
+#divListaTermosThesaurus .divTabela .divCell:nth-child(3) {
+	width: 60%;
+}
+
+#menuprincipal li a.ativo, #menu_lateral li a.ativo {
+	background-color: rgba(191, 195, 198, 0.35);
+	display: inline-block;
+	width: 100%;
+}
+
+#menuprincipal li a.ativo:hover {
+	background-color: #414F55;
+}
+
+.colunaRefinamento {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	width: 300px;
+}
+
+#formRefinamento {
+	/*margin-top: 3em;*/
+	padding: 0;
+}
+
+#configuracoesPesquisa .col-md-4 {
+	padding: 0;
+}
+
+#formRefinamento #frmConsultaRef {
+	padding: 15px 0;
+}
+
+#formRefinamento .formExpandido {
+	width: 1000px;
+	background-color: #FFFFFF;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+/* ----------------------------------- */
+.clsConteudoFiltro>div::-webkit-scrollbar-track, .listadocumentos::-webkit-scrollbar-track,
+	.temasPP::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F9F9F9;
+	background-color: transparent;
+}
+
+.clsConteudoFiltro>div::-webkit-scrollbar, .listadocumentos::-webkit-scrollbar,
+	.temasPP::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+
+.clsConteudoFiltro>div::-webkit-scrollbar-thumb, .listadocumentos::-webkit-scrollbar-thumb,
+	.temasPP::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #BFC3C6;
+}
+/*
+.clsConteudoFiltro > div::-webkit-scrollbar { 
+	background-color: transparent; 
+}
+
+.clsConteudoFiltro > div::-webkit-scrollbar-button:start { 
+}
+.clsConteudoFiltro > div::-webkit-scrollbar-button:end { 
+}
+.clsConteudoFiltro > div::-webkit-scrollbar-track { 
+	background-color: transparent;
+}
+.clsConteudoFiltro > div::-webkit-scrollbar-track-piece { 
+	background-color: transparent; 
+}
+.clsConteudoFiltro > div::-webkit-scrollbar-thumb { 
+	background-color: #eeeeee; 
+	width: 0.5em;
+}
+.clsConteudoFiltro > div::-webkit-scrollbar-corner { 
+	background-color: transparent;
+}
+.clsConteudoFiltro > div::-webkit-resizer { 
+	background-color: transparent;
+}
+*/
+/* ----------------------------------- */
+.blocoPesquisaAvancada {
+	/*max-height: 600px;*/
+	/*    overflow-y: auto;
+    -ms-overflow-y: auto; */
+	
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar {
+	background-color: transparent;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-button:start {
+	background-image: url(/recursos/imagens/scroll-btn-up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-button:end {
+	background-image: url(/recursos/imagens/scroll-btn-down.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-thumb {
+	background-color: #eeeeee;
+	width: 1em;
+}
+
+.blocoPesquisaAvancada::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+.blocoPesquisaAvancada::-webkit-resizer {
+	background-color: transparent;
+}
+
+.formExpandido+.clsFiltrarResultados {
+	/*margin-top: 66px;*/
+	
+}
+
+.formFixo {
+	position: fixed;
+	top: 0;
+	/*    width:296.75px;*/
+	background-color: #FFFFFF;
+	z-index: 99;
+}
+
+.formFixoFiltros {
+	position: fixed;
+	top: 165px;
+	/*    width:296.75px;*/
+	background-color: #FFFFFF;
+	z-index: 99;
+}
+.clsCorpoPaginaResultadoJT .formFixoFiltros {
+	top: 214px;
+}
+.clsRefinamentoPP+.formFixoFiltros {
+	top: 0;
+}
+
+.formFixo .boxFiltro, .formFixoFiltros .boxFiltro {
+	width: 274px;
+	max-width: 274px;
+}
+
+.focoPesquisa .formularioRefinamento.formFixo {
+	width: 1380px;
+	max-width: 100%;
+	background-color: #FFFFFF;
+	z-index: 9999;
+}
+.focoPesquisa .formularioRefinamento.formFixo .boxFiltro {
+	width: 98%;
+	max-width: 100%;
+}
+
+.infoPesquisaFixo {
+	position: fixed;
+	top: 65px;
+	top: 47px;
+	background-color: #F9F9F9;
+	z-index: 98;
+	width: 1065px;
+	border-bottom: 1px solid #DDDFE1;
+	margin-left: -12px;
+	max-height: 3.5em;
+	overflow: hidden;
+}
+
+.clsInfoPesquisaPP.infoPesquisaFixo {
+	top: 0;
+}
+
+.barraOutrasBasesFixo {
+	position: fixed;
+	top: 0;
+	background-color: #FFFFFF;
+	z-index: 99;
+	width: 1068px;
+}
+
+.divListaAcordaos table {
+	width: 70%;
+}
+
+.ui-dialog {
+	max-width: 100%;
+}
+
+.window {
+	border: 1px solid #003f65;
+}
+
+#listaSumulas .docTexto {
+	page-break-inside: avoid;
+}
+
+.temas b {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.corpoPaginaResultado .clsEmentaRR pre {
+	font-family: Ubuntu, Arial, sans-serif;
+	padding: 1.5em;
+}
+
+.clsEmentaRR b {
+	color: #004164;
+	display: inline;
+}
+/*.indiceSumulas {
+	margin-top: 2em;
+}*/
+#ministroRef, #ministroRefAtivos, #ministroRefInativos, #divUFRef,
+	#divCLASRef, #divSituacao, #divMateria, #divOrgaosJulgadores, #divAno {
+	max-height: 10em;
+	overflow-y: auto;
+	padding-right: 1em;
+	/*  -ms-overflow-style: none;  /* IE and Edge */
+	/*  scrollbar-width: none;  /* Firefox */
+}
+/*#divUFRef::-webkit-scrollbar, 
+#divCLASRef::-webkit-scrollbar, 
+#ministroRef::-webkit-scrollbar, 
+#divOrgaosJulgadores::-webkit-scrollbar, 
+#ministroRefAtivos::-webkit-scrollbar, 
+#ministroRefInativos::-webkit-scrollbar {
+  display: none;
+}*/
+.clsCorpoPaginaResultadoPP #divMateria {
+	max-height: 37.5em;
+}
+
+.clsConteudoFiltro .customCheckbox span {
+	display: block;
+	float: left;
+}
+
+.clsConteudoFiltro .customCheckbox span.qtd {
+	display: block;
+	float: right;
+}
+
+.clsConteudoFiltro .customCheckbox span.nome {
+	width: 65%;
+	text-align: left;
+}
+
+.clsConteudoFiltro #ministroRefInativos {
+	display: none;
+}
+
+#dtde1, #dtde2, #dtpb1, #dtpb2 {
+	width: 8.5em;
+}
+
+.clsFormularioPesquisa #dtde1, .clsFormularioPesquisa #dtde2,
+	.clsFormularioPesquisa #dtpb1, .clsFormularioPesquisa #dtpb2 {
+	width: 12em;
+}
+
+#formRefinamento #fechaForm {
+	display: none;
+	color: rgba(178, 31, 36, 1);
+	cursor: pointer;
+}
+
+#formRefinamento .input-group {
+	width: 99%;
+}
+
+#formRefinamento .formExpandido #fechaForm {
+	display: block;
+	top: 4px;
+	right: 4px;
+	position: absolute;
+	padding: 0;
+	border: none;
+	font-weight: bold;
+}
+
+#formRefinamento .label {
+	color: rgb(0, 63, 101);
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.clsFrmConsultaPP .blocoPesquisaAvancada, .clsFrmConsultaINF .blocoPesquisaAvancada
+	{
+	border: 1px solid rgba(229, 229, 229, 1);
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.divisoria {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	color: #316EA9;
+	display: block;
+	padding: 0.25em 0;
+	border-bottom: 1px solid #DDDFE1;
+	border-top: 1px solid #DDDFE1;
+}
+
+.divisoria>span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.divisoria>span.listaDown, .divisoria>span.listaUp {
+	padding: 4px 2px 0 2px;
+}
+
+#divAtivos, #divInativos {
+	padding-top: 0.5em;
+}
+
+.clsFiltrarResultados .divCell:nth-child(2) {
+	text-align: right;
+}
+
+.clsFiltrarResultados {
+	display: table;
+	width: 100%;
+}
+
+.clsFiltrarResultados>div {
+	display: table-row;
+	width: 100%;
+}
+
+.clsFiltrarResultados #idLinkFiltrar, .clsFiltrarResultados #botaoLimparTodosFiltros
+	{
+	display: table-cell;
+}
+
+.clsFiltrarResultados #botaoLimparTodosFiltros {
+	text-align: right;
+}
+
+.clsFiltrarResultados span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+}
+
+.clsFrmConsultaPP #botaoLimparTodosFiltros {
+	float: right;
+}
+
+.blocoPesquisaAvancada {
+	max-width: 400px;
+}
+
+.clsFiltrarResultados .labelLink {
+	margin-left: 0.25em;
+}
+
+.clsFiltrarResultados a#botaoLimparTodosFiltros:nth-child(2) {
+	display: none;
+}
+
+#botaoAplicarFiltrosMinistro, #botaoLimparFiltrosMinistro,
+	#botaoAplicarFiltrosOrgaoJulgador, #botaoLimparFiltrosOrgaoJulgador,
+	#botaoLimparTodosFiltros {
+	display: none;
+}
+
+#MIN-ATIVOS, #MIN-INATIVOS {
+	cursor: pointer;
+}
+
+.clsHint {
+	position: absolute;
+	margin-top: 6px;
+	background-color: #FDFDFD;
+	background-color: #EEEEEF;
+	display: none;
+	z-index: 2;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 0.5em 1em;
+	text-align: left;
+	border: 1px solid #97A3AA;
+	width: auto;
+	max-width: 100%;
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.clsHint:before {
+	border-bottom: 1em solid #97A3AA;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -1em;
+}
+
+.clsHint h4 {
+	margin: 0.5em 0;
+	color: #B2101D;
+	font-weight: bold;
+}
+
+#configuracoesPesquisa.configIE {
+	display: block;
+	overflow: auto;
+	width: 287.75px;
+}
+
+#configuracoesPesquisa.configIE>div {
+	display: block;
+	float: left;
+	width: 33.3%;
+}
+
+#listaInteiroTeor div.row:nth-child(odd) {
+	background-color: #f6f6f7;
+}
+
+#listaInteiroTeor div.row:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+#listaInteiroTeor div.tableHeader, #listaInteiroTeor div.tableHeader:nth-child(odd)
+	{
+	font-weight: bold;
+	background-color: #D4D6D7;
+}
+
+.clsResizable, .clsResizableINFJ, .clsResizablePP {
+	border: 1px solid rgba(229, 229, 229, 1);
+	padding: 1em;
+	z-index: 2;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.divPesquisaNovaPagina {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.divPesquisaNovaPagina img {
+	width: 100%;
+}
+
+.iconeEspera {
+	width: 22px;
+	height: 22px;
+}
+
+#esperaSUM {
+	margin-left: 1em;
+	margin-top: 1em;
+	width: 22px;
+	height: 22px;
+}
+
+#esperaMAT, #esperaUF, #esperaORG, #esperaCLAS, #esperaMIN, #esperaANO, 
+	#esperaMIN-INATIVOS {
+	width: 22px;
+	height: 22px;
+}
+
+#divAjudaJuris a:before {
+	content: "\eaa0";
+	font-family: IcoFont !important;
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	line-height: 1;
+	-webkit-font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
+
+div.tabelaSumario {
+	column-count: 2;
+	column-gap: 1em;
+	-moz-column-count: 2;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+	line-height: 1.3em;
+}
+
+div.tabelaSumario .linha {
+	padding: 0.25em 0.5em;
+}
+
+#corpopaginajurisprudencia .barraTeseSuperada a:link,
+	#corpopaginajurisprudencia .barraTeseSuperada a:active,
+	#corpopaginajurisprudencia .barraTeseSuperada a:hover,
+	#corpopaginajurisprudencia .barraTeseSuperada a:visited {
+	color: #444543;
+	text-decoration: underline;
+}
+
+.clsCaixaMensagem {
+	font-style: italic;
+	color: #FF0000;
+	padding: 1em;
+	text-align: center;
+}
+
+#idJurisprudenciaThesaurusFormularioBloco .divTabela {
+	width: 80%;
+	margin: auto;
+}
+
+#idJurisprudenciaThesaurusFormularioBloco .divCell {
+	padding: 0.5em;
+}
+
+#idJurisprudenciaThesaurusFormularioBloco .divCell:nth-child(1) {
+	text-align: right;
+}
+
+#idJurisprudenciaThesaurusFormularioBloco input[type=text] {
+	width: 100%;
+	max-width: 100%;
+}
+
+#idLinkTopoPagina {
+	position: fixed;
+	bottom: 4em;
+	right: 10%;
+	display: none;
+}
+
+#idLinkTopoPagina>div {
+	/*display: block;
+	max-width: 1440px;
+	margin: auto;
+	text-align: right;
+	height: 2em;*/
+	
+}
+
+#idLinkTopoPagina .textoHint {
+	white-space: nowrap;
+	right: 0;
+	left: auto;
+}
+
+#idLinkTopoPagina .textoHint:before {
+	left: auto;
+	right: 1em;
+}
+
+#idLinkTopoPagina a {
+	background-color: #FFFFFF;
+	border: solid 1px rgba(191, 195, 198, 0.8);
+	border-radius: 4px;
+	padding: 6px 8px;
+	color: rgba(160, 160, 160, 1);
+	font-size: 1em;
+}
+
+.docSumula .docTexto b {
+	display: block;
+	padding: 0.25em 0;
+}
+
+.docSumula .iconesAcoesSumulas {
+	font-size: 1.5em;
+}
+
+#dialogPopup {
+	overflow: hidden;
+}
+
+.popupVideo {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.popupVideo p {
+	padding: 1em;
+	text-align: justify;
+}
+
+.popupVideo iframe {
+	width: 450px;
+	height: 260px;
+	margin: auto;
+}
+
+.popupVideo p iframe {
+	width: 130px;
+	height: 78px;
+	margin: auto 1em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.popupVideo p span {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto 1em;
+}
+
+.popupVideo p span.titulo {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}
+
+#idLinkFiltrarResultadosSumulas {
+	display: inline-block;
+	width: calc(100% - 25px);
+}
+
+#divOrgaosJulgadoresAvancada, #divMinistrosAvancada {
+	/*	border: solid 1px rgba(191, 195, 198, 0.8);
+    border-radius: 7px;
+    padding: 6px 12px;*/
+	/*    height: 33px;
+    overflow: hidden;*/
+	min-height: 1.5em;
+}
+
+#divOrgaosJulgadoresAvancada input[type=text], #divMinistrosAvancada input[type=text]
+	{
+	border: none;
+	background-color: transparent;
+	width: calc(100% - 1em);
+}
+
+#divOrgaosJulgadoresAvancada>div, #divMinistrosAvancada>div {
+	display: none;
+}
+
+#divOrgaosJulgadoresAvancada.aberta>div, #divMinistrosAvancada.aberta>div
+	{
+	display: block;
+}
+
+#divOrgaosJulgadoresAvancada>div, #divMinistrosAvancada div.listaCheck {
+	column-count: 4;
+	column-gap: 1em;
+	clear: both;
+	margin-top: 8px;
+	max-height: 500px;
+	overflow: auto;
+}
+
+#divMinistrosAvancada .divide {
+	margin-top: 1em;
+	border-bottom: 1px solid #c0c0c0;
+	margin-bottom: 4px;
+	padding: 0 4px;
+	cursor: pointer;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	color: #316EA9;
+}
+
+.divide span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#divOrgaosJulgadoresAvancada .icofont-rounded-down,
+	#divMinistrosAvancada .icofont-rounded-down,
+	#divOrgaosJulgadoresAvancada .icofont-rounded-up, #divMinistrosAvancada .icofont-rounded-up
+	{
+	font-size: 1.3em;
+	text-align: right;
+	float: right;
+	margin-right: -9px;
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+#divOrgaosJulgadoresAvancada .icofont-rounded-up, #divMinistrosAvancada .icofont-rounded-up
+	{
+	display: none;
+}
+
+#divOrgaosJulgadoresAvancada.aberta .icofont-rounded-up,
+	#divMinistrosAvancada.aberta .icofont-rounded-up {
+	display: block;
+}
+
+#divOrgaosJulgadoresAvancada .icofont-rounded-down,
+	#divMinistrosAvancada .icofont-rounded-down {
+	display: block;
+}
+
+#divOrgaosJulgadoresAvancada.aberta .icofont-rounded-down,
+	#divMinistrosAvancada.aberta .icofont-rounded-down {
+	display: none;
+}
+
+#relatorSelecionado, #orgaoSelecionado {
+	display: inline-block;
+	width: 95%;
+	height: 19px;
+	overflow: auto;
+	color: #c0c0c0;
+	cursor: pointer;
+}
+
+.clsFormularioPesquisa .linhaform>div.label {
+	padding-top: 0.5em;
+}
+/*
+.juris_pesqAvancada {
+	white-space: nowrap;
+}
+*/
+.ui-dialog-titlebar {
+	background-color: #004164;
+	border: 0;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 1.5em 1.5em;
+}
+
+.ui-dialog .ui-dialog-title {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.ui-widget-overlay {
+	background: #3e3e3e;
+}
+
+a.clsLinkSaibaMais, a.clsLinkSaibaMais:hover {
+	text-decoration: none;
+}
+
+.juris_avisos .icofont-rounded-up {
+	display: none;
+}
+/* PESQUISA PRONTA*/
+#tabsPesquisaPronta.tabs {
+	border: 1px solid rgba(229, 229, 229, 1);
+	border: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+#tabsPesquisaPronta ul.ui-tabs-nav {
+	padding: 0;
+	border: none;
+}
+
+#tabsPesquisaPronta ul.ui-tabs-nav li {
+	padding: 0;
+	margin: 0;
+	border: none;
+	display: block;
+	float: left;
+	width: 50%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+#tabsPesquisaPronta ul.ui-tabs-nav li a {
+	display: block;
+	float: none;
+	padding: 1em;
+	font-size: 1.5em;
+	background-color: #F1F2F3;
+	color: #5A5A59;
+	text-align: center;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border: 1px solid #DDDFE1;
+}
+
+#tabsPesquisaPronta ul.ui-tabs-nav li.ui-tabs-active a {
+	background-color: #DFE7ED;
+	background-color: #FFFFFF;
+	color: #003f65;
+	font-family: ubuntu, sans-serif;
+	font-weight: bold;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom: none;
+}
+
+.clsDestaquePP {
+	display: block;
+	padding: 1em 0.25em;
+}
+
+.clsDestaquePP .slider {
+	display: block;
+	/*overflow: auto;*/
+	min-height: 20em;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.clsDestaquePP .divCell {
+	width: 18%;
+}
+/*.clsDestaquePP .btnNavegacao {
+	width: 5%;
+}*/
+.clsDestaquePP .slider .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.clsDestaquePP .slider .item {
+	display: block;
+	margin: 0 4px;
+	min-height: 35em;
+	white-space: normal;
+	border: 1px solid rgba(229, 229, 229, 1);
+	border-top: 4px solid #B2101D;
+	text-align: left;
+}
+
+.clsDestaquePP .slider .item .headerItem {
+	border-bottom: 1px solid rgba(229, 229, 229, 1);
+	text-align: center;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 13px;
+	min-height: 6.5em;
+	padding: 0.25em 0;
+}
+
+.clsDestaquePP .slider .item .headerItem .materiaPP {
+	padding: 0.25em 0.5em;
+}
+
+.clsDestaquePP .slider .item .headerItem .tituloPP {
+	padding: 0.25em 0.5em;
+	font-weight: bold;
+}
+
+.clsDestaquePP .slider .item .temasPP ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.clsDestaquePP .slider .item .temasPP li {
+	display: block;
+	padding: 0.5em;
+}
+.clsDestaquePP .slider .item .temasPP li > div {
+	position: relative;
+}
+.clsDestaquePP .slider .item .temasPP li a, .clsDestaquePP .slider .item .temasPP li a:link,
+	.clsDestaquePP .slider .item .temasPP li a:hover, .clsDestaquePP .slider .item .temasPP li a:active,
+	.clsDestaquePP .slider .item .temasPP li a:visited {
+	color: #2465A4;
+}
+
+.clsDestaquePP .slider .item .temasPP li a {
+	text-decoration: none;
+}
+
+.clsDestaquePP .slider .item .temasPP li a:hover {
+	text-decoration: underline;
+}
+
+/*#tabCASOS_NOTORIOS {
+	display: block;
+	padding: 1em 0.25em;
+}
+
+#tabCASOS_NOTORIOS .slider {
+	display: block;
+	overflow: auto;
+	min-height: 20em;
+	white-space: nowrap;
+}
+
+#tabCASOS_NOTORIOS .divCell {
+	width: 18%;
+}
+
+#tabCASOS_NOTORIOS .btnNavegacao {
+	width: 5%;
+	text-align: center;
+}
+
+#tabCASOS_NOTORIOS .slider .item {
+	display: block;
+	min-width: 110px;
+	margin: 0 4px;
+	vertical-align: top;
+	white-space: normal;
+	border: 1px solid rgba(229, 229, 229, 1);
+	border-top: 4px solid #B2101D;
+}
+
+#tabCASOS_NOTORIOS .slider .item .headerItem {
+	border-bottom: 1px solid rgba(229, 229, 229, 1);
+	text-align: center;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding: 0.25em 0;
+}
+
+#tabCASOS_NOTORIOS .slider .item .headerItem .anoPP {
+	padding: 0.25em 0.5em;
+	font-weight: bold;
+}
+
+#tabCASOS_NOTORIOS .slider .item .temasPP ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 20em;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+#tabCASOS_NOTORIOS .slider .item .temasPP li {
+	display: block;
+	padding: 0.5em 1em;
+}
+
+#tabCASOS_NOTORIOS .slider .item .temasPP li a, #tabCASOS_NOTORIOS .slider .item .temasPP li a:link,
+	#tabCASOS_NOTORIOS .slider .item .temasPP li a:hover,
+	#tabCASOS_NOTORIOS .slider .item .temasPP li a:active,
+	#tabCASOS_NOTORIOS .slider .item .temasPP li a:visited {
+	color: #2465A4;
+}
+
+#tabCASOS_NOTORIOS .slider .item .temasPP li a:hover {
+	text-decoration: underline;
+}
+*/
+ul#filtroMateria {
+	/*	border:1px Solid rgba(229, 229, 229, 1);
+	padding: 0.5em;
+	max-height: 300px;
+	overflow-y: auto;*/
+	
+}
+
+#sliderCASOS_NOTORIOSLeft, #sliderCASOS_NOTORIOSRight,
+	#sliderASSUNTOS_RECENTESLeft, #sliderASSUNTOS_RECENTESRight {
+	text-align: center;
+	/*	height: 32px;
+	width: 32px; */
+	padding: 0.25em;
+	font-size: 1.5em;
+	color: #2465A4;
+	border: none;
+	border-radius: 50%;
+	background-color: #dfe7ed;
+	/*display: none;*/
+}
+
+#sliderCASOS_NOTORIOSLeft:disabled, #sliderCASOS_NOTORIOSRight:disabled,
+	#sliderASSUNTOS_RECENTESLeft:disabled, #sliderASSUNTOS_RECENTESRight:disabled
+	{
+	color: #FFFFFF;
+}
+
+#tabsPesquisaPronta .slider {
+	position: relative;
+}
+
+#tabCASOS_NOTORIOS .slider .item .temasPP div.saibaMais ul {
+	height: auto;
+}
+
+#tabsPesquisaPronta li div.saibaMais .labelSaibaMais {
+	margin: 0;
+	padding: 0;
+}
+
+#tabsPesquisaPronta li div.saibaMais li.mostraTituloNota {
+	height: auto;
+	width: auto;
+}
+#tabsPesquisaPronta li div.saibaMais h5 {
+	margin:0;
+	padding:0
+}
+#tabsPesquisaPronta li div.saibaMais {
+	font-size: 11px;
+/*	display: none;
+	text-align: left;
+	border: #c0c0c0 1px dotted;
+	padding: 1em;
+	z-index: 100;
+	background-color: #f0f0f0;
+	left: 0px;
+	margin: 10px;
+	width: 250px;
+	position: absolute;
+	top: 10px;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 1.3em;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);*/
+}
+#tabsPesquisaPronta li div.saibaMais .iconeSaibaMais {
+	height: 20px;
+	width: 20px;
+	background-size: 30px 30px;
+} 
+#tabsPesquisaPronta li div.saibaMais a {
+	padding-left: 1em;
+	max-width: calc(100% - 20px);
+}
+#tabsPesquisaPronta li div.saibaMais {
+	/*margin-left: 2em;*/
+}
+.corpoPaginaResultado .materiaPP {
+	font-size: 1.5em;
+	background-color: #003f65;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 0.5em;
+	margin: 0;
+	line-height: 1.5em;
+}
+
+.corpoPaginaResultado .tituloPP {
+	padding: 0.5em;
+	font-size: 1.5em;
+	background-color: #DDDFE1;
+	padding: 0.5em;
+	margin: 0 0 1em 0;
+	line-height: 1.5em;
+}
+
+.divJurisprudenciaTematicaLista>ul {
+	list-style-type: none;
+	padding: 0 0 1em 0;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDFE1;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.divJurisprudenciaTematicaLista a.linkTema {
+	display: block;
+	padding: 0.25em 0;
+}
+
+.colunaRefinamento {
+	font-size: 13px;
+}
+
+.col300 {
+	-ms-flex: 0 0 300px;
+	flex: 0 0 300px;
+	max-width: 300px;
+}
+
+.col900 {
+	width: calc(100% - 300px);
+}
+
+pre {
+	overflow: visible;
+	white-space: pre-wrap;
+}
+
+.iconesSumulas {
+	background: rgba(191, 195, 198, 0.10);
+	padding: 2em;
+}
+
+.corpoPaginaPesquisaPronta {
+	font-size: 13px;
+	display: grid;
+	grid-template-columns: 300px auto;
+}
+/*
+.corpoPaginaPesquisaPronta .ui-tabs-active:after,
+.corpoPaginaResultado .ui-tabs-active:after {
+  border-top:8px solid #DFE7ED;
+  border-left:8px solid transparent;
+  border-right:8px solid transparent;
+  content:'';
+  display:inline-block;
+  left:calc(50% - 8px);
+  position:absolute;
+  z-index:2;
+}
+*/
+.corpoPaginaPesquisaPronta .ui-tabs-panel {
+	/*margin-top: 0.5em;*/
+	border-right: 1px solid #DDDFE1;
+	border-left: 1px solid #DDDFE1;
+	border-bottom: 1px solid #DDDFE1;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 2em 0.25em;
+}
+
+#formRefinamento .txtLabel {
+	display: block;
+	padding: 1em 0;
+}
+
+.listaTitulos {
+	list-style-type: disc;
+	padding: 1em 3em;
+}
+
+.listaTitulos>li {
+	padding: 1em;
+}
+
+.corpoPaginaResultado .materiaPP {
+	font-size: 1.2em;
+	background-color: #003f65;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 0.5em;
+	margin: 0;
+	line-height: 1.5em;
+	font-family: 'Ubuntu';
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.corpoPaginaResultado .tituloPP {
+	font-size: 1.2em;
+	background-color: #DDDFE1;
+	padding: 0.5em 1em;
+	margin: 0;
+	line-height: 1.5em;
+	font-family: ubuntu;
+	font-weight: bold;
+}
+/*.docSumula .tituloNota {
+	position: relative;
+}*/
+.ui-widget-content .clsInformativoTexto a, .ui-widget-content .clsInformativoTexto a:link,
+	.ui-widget-content .clsInformativoTexto a:active, .ui-widget-content .clsInformativoTexto a:hover,
+	.ui-widget-content .clsInformativoTexto a:visited {
+	color: #2465A4;
+	text-decoration: underline;
+}
+
+#idEdicaoSelecionada {
+	
+}
+
+.clsFormResponsive {
+	display: none;
+}
+
+#iconeDownloadVerbetes a {
+	float: right;
+}
+
+#iconeDownloadVerbetes {
+	padding: 1em;
+	display: block;
+	float: right;
+	width: auto;
+	text-align: right;
+}
+
+#iconeDownloadVerbetes span {
+	display: inline-block;
+}
+
+.listaODS img {
+	width: 80px;
+	height: 80px;
+}
+
+.divSituacaoTema ul {
+	margin: 0;
+}
+
+#linkPesquisaCNJ {
+	display: block;
+	float: right;
+	margin-left: 120px;
+	font-size: 1.2em;
+	line-height: 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#linkPesquisaCNJ .bannerCNJ {
+	top: 28px;
+	position: absolute;
+	display: none;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	z-index: 10;
+	cursor: pointer;
+}
+
+#linkPesquisaCNJ:hover .bannerCNJ, #linkPesquisaCNJ .bannerCNJ:hover {
+	display: block;
+}
+
+.colunaRefinamento #idPesquisaAvancada {
+	z-index: 100;
+	margin: 4px 4px 4px -13px;
+	width: 990px;
+	background-color: #FFFFFF;
+	/*    -moz-box-shadow:0 0.5em 1em 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 0.5em 1em 0 rgba(0,0,0,0.2);
+    box-shadow:0 0.5em 1em 0 rgba(0,0,0,0.2);
+    */
+	border: none;
+}
+
+.colunaRefinamento #idPesquisaAvancada .showHint {
+	padding-right: 1em;
+}
+
+.colunaRefinamento .clsHint {
+	width: 300px;
+}
+
+.colunaRefinamento .juris_pesqAvancada {
+	display: block;
+}
+
+.colunaRefinamento .juris_pesqAvancada span {
+	font-size: 12px;
+	padding-left: 5px;
+	padding-top: 5px;
+	display: inline-block;
+}
+
+#classe, #listaSub {
+	/*	width: 40%;*/
+	
+}
+
+.clsListaSucessivos pre {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.clsTipoPesquisa {
+	font-size: 0.85em;
+}
+
+.clsTipoPesquisa .divCell {
+	padding: 0.25em;
+}
+
+.nav-aviso {
+	float: right;
+	/*margin-top: 5px;*/
+}
+
+.aviso-dot-navega {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #BFC3C6;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.aviso-ativo {
+	background-color: #F5AF00;
+}
+
+.clsConteudoAviso {
+	display: none;
+	/*	position: absolute;
+	top: 2.2em;
+	left: 0;
+	height: auto;
+	background-color: #004164;
+	z-index: 10;
+	width: 100%;*/
+}
+/*.clsConteudoAviso > div {
+	max-width: 920px;
+	margin: auto;
+}*/
+.clsChamadaAviso {
+	/*margin-top: 2px;*/
+	
+}
+
+.clsChamadaAviso a, .clsChamadaAviso i, .clsChamadaAviso span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.clsChamadaAviso a {
+	padding: 0 2px;
+}
+
+.clsDivFormPesquisa {
+	/*	width: 100%;
+	max-width: 970px;
+	margin: auto;*/
+	
+}
+
+#idDivFormBotoesOperadoresAvancada {
+	/*	width: 100%;
+	max-width: 970px;
+	margin: auto auto 2em auto !important;*/
+	padding-bottom: 1em;
+}
+
+.juris_conectMostrar {
+	/*	padding-left: 100px !important;*/
+	
+}
+
+.juris_conectMostrar>div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idDivFormBotoesOperadoresAvancada>div:nth-child(1) {
+	/*	padding-left: 100px;
+	width: auto;*/
+	
+}
+
+#idDivFormBotoesOperadoresAvancada>div:nth-child(2) {
+	/*width: 100px;*/
+	
+}
+
+.clsTipoTermoPesquisa {
+	/*	display: inline-block;
+	width: 100px;*/
+	
+}
+
+.clsTermoLivrePesquisa {
+	/*	display: inline-block;
+	width: calc(100% - 100px);*/
+	
+}
+
+.clsFormularioPesquisa input:focus {
+	box-shadow: none;
+}
+
+h2 .icofont-question {
+	font-size: 0.75em;
+	display: inline-block;
+	vertical-align: top;
+	color: #003f65;
+	background-color: #C3D1D9;
+	border-radius: 50%;
+	padding: 6px 5px 4px 5px;
+}
+
+h2 .icofont-question:hover, h2 .icofont-question-hover {
+	color: #FFFFFF;
+	background-color: #003F65;
+}
+
+.divMensagemTutorial ul {
+	list-style-type: none;
+}
+
+.divMensagemTutorial ul li {
+	display: block;
+}
+
+.divMensagemTutorial a {
+	color: #0594B4;
+}
+
+.divMensagemTutorial li a {
+	font-weight: bold;
+	display: block;
+	padding: 0.5em;
+	padding-left: 36px;
+	background-size: auto 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.divMensagemTutorial li a.videos {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-6.png");
+}
+
+.divMensagemTutorial li a.dicas {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-5.png");
+}
+
+.divMensagemTutorial li a.operadores {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-4.png");
+}
+
+.divMensagemTutorial li a.espelho {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-3.png");
+}
+
+.divMensagemTutorial li a.legislacao {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-2.png");
+}
+
+.divMensagemTutorial li a.faq {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-tutorial-1.png");
+}
+/*
+.wrapper-form-juris button[type=button] {
+	color: rgb(87,87,86);
+	background-color: #E4E9EC;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.wrapper-form-juris button[type=submit] {
+	color: #FFFFFF;
+	background-color: #003f65;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.wrapper-form-juris button[type=button] span,
+.wrapper-form-juris button[type=submit] span {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0.25em;
+}
+.wrapper-form-juris button[type=button]:hover {
+	background-color: #d2d4d5;
+	color: rgb(87,87,86)!important;
+}
+.wrapper-form-juris button[type=button]#idMostrarPesquisaAvancada,
+.wrapper-form-juris button[type=button]#idEsconderPesquisaAvancada,
+.wrapper-form-juris button[type=button]#idLimparPesquisaAvancada {
+	color: #003F65!important;
+}
+.wrapper-form-juris button[type=button]#idMostrarPesquisaAvancada:hover,
+.wrapper-form-juris button[type=button]#idEsconderPesquisaAvancada:hover,
+.wrapper-form-juris button[type=button]#idLimparPesquisaAvancada:hover {
+	color: #003F65!important;
+	background-color: #d2d4d5;
+}
+*/
+.clsPesquisaAvancada {
+	display: none;
+}
+
+#formularioAvancadoRef h3, .clsTituloPaginaPrincipal h3,
+	.clsPesquisaAvancada h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: left;
+	color: #003f65;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: transparent;
+}
+
+.hint {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #003f65;
+	color: #FFFFFF;
+	padding: 1em 1.5em;
+	border-radius: 4px;
+	z-index: 30;
+	margin-top: 0.5em;
+	text-align: left;
+	width: 300px;
+	line-height: 1.5em;
+	font-size: 1.1em;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.hint:before {
+	border-bottom: 8px solid #003f65;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -8px;
+	right: 1em;
+}
+
+.hint h4 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.hint p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.wrapHint .icofont-question-hover:after, .wrapHint .icofont-question:hover:after
+	{
+	border-bottom: 0.5em solid #003f65;
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: -0.5em;
+	left: 18%;
+	right: auto;
+}
+
+#idBotoesOperadores .col {
+	padding-right: 0.15em;
+	padding-left: 0.15em;
+}
+
+#idBotoesOperadores .hint {
+	left: 0;
+}
+
+#idBotoesOperadores .hint:before {
+	left: 1em;
+	right: auto;
+}
+
+.hasHint {
+	position: relative;
+}
+
+.hasHint:hover+.hint, .hasHint+.hint:hover {
+	display: block;
+}
+
+.hideHint:hover+.hint, .hideHint+.hint:hover {
+	display: none;
+}
+
+.wrapHint {
+	position: relative;
+	max-width: 100%;
+	display: inline-block;
+	margin: auto;
+}
+
+.docTitulo .hasHint {
+	background-color: #C3D1D9;
+	border-radius: 50%;
+	padding: 0.25em;
+	margin-left: 0.25em;
+}
+
+h2 .wrapHint {
+	width: 710px;
+}
+
+.wrapHint .hideHint {
+	display: none;
+}
+
+.hasHint+.divMensagemTutorial {
+	/*	display: block;*/
+	
+}
+
+.divMensagemTutorial {
+	font-size: 13px;
+	font-weight: normal;
+	width: 100%;
+	margin-top: 0.6em;
+	padding: 2em;
+}
+
+.divMensagemTutorial:before {
+	border: none;
+}
+
+.clsFormularioPesquisa #ementa, .clsFormularioPesquisa #processo,
+	.clsFormularioPesquisa #classe, .clsFormularioPesquisa #uf,
+	.clsFormularioPesquisa #nota {
+	height: calc(2.25rem + 10px);
+}
+
+.clsFormularioPesquisa #dtpb1, .clsFormularioPesquisa #dtpb2,
+	.clsFormularioPesquisa #dtde1, .clsFormularioPesquisa #dtde2 {
+	height: calc(2.25rem - 4px);
+}
+/*
+.has-float-label input.siglajud + label {
+	display: none;
+}
+.has-float-label input.siglajud + label,
+.has-float-label input.numero_leg + label {
+	top: 0.75rem;
+	left: 1.5rem;
+}
+.has-float-label input.siglajud:focus + label,
+.has-float-label input.numero_leg:focus + label {
+	top: -0.5em;
+	display: inline-block;
+}
+*/
+.has-float-label input.siglajud+label, .has-float-label input.numero_leg+label
+	{
+	left: 1.5rem;
+}
+
+#spanNomesOrgaos, #spanNomesMinistros {
+	display: block;
+	cursor: pointer;
+	min-height: 18px;
+}
+
+#spanNomesOrgaos span, #spanNomesMinistros span {
+	display: inline-block;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.divNavegaInfo .barraIconesNavegacao {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#idDivConfiguracoes select, #idDivConfiguracoesRef select {
+	line-height: 1.5em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	font-size: 1em;
+	height: auto;
+}
+
+#idDivConfiguracoes label, #idDivConfiguracoesRef label {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+#idDivConfiguracoes label.col-form-label, #idDivConfiguracoesRef label.col-form-label
+	{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#idMostrarConfiguracoes i.icofont-gear, #idMostrarConfiguracoes2 i.icofont-gear
+	{
+	font-size: 2em;
+	color: #003f65;
+}
+
+.clsFormularioPesquisa .form-group .icofont-question {
+	position: absolute;
+	left: -1.6rem;
+	top: calc(50% - 1em);
+	color: #003f65;
+	background-color: #C3D1D9;
+	border-radius: 50%;
+	padding: 6px 5px 4px 5px;
+}
+
+.clsFormularioPesquisa .form-group .hint {
+	left: -3em;
+	right: auto;
+	top: calc(50% + 1em);
+}
+
+.clsFormularioPesquisa .form-group .hint:before {
+	left: 1em;
+	right: auto;
+}
+
+.hasHint:hover+.hiddenElement, .hasHint+.hiddenElement:hover {
+	display: none;
+}
+
+.botaoFake {
+	background-color: #d2d4d5;
+	color: rgb(87, 87, 86) !important;
+	padding: 0.25em 0.5em;
+	display: inline-block;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.clsItemSelecionado {
+	cursor: default;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.clsItemSelecionado i {
+	cursor: pointer;
+}
+
+.clsFormularioPesquisa .form-group .hideHint {
+	display: none;
+}
+
+#idLimparPesquisaAvancada, #idEsconderPesquisaAvancada,
+	.clsPesquisaAvancada {
+	display: none;
+}
+
+.formularioRefinamento {
+	grid-area: pesquisa;
+}
+
+.formularioRefinamentoFiltros {
+	grid-area: filtro;
+	padding-bottom: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.navegacaoDocumento {
+	grid-area: doc;
+}
+
+#corpopaginajurisprudencia {
+	display: grid;
+	grid-template-columns: 300px auto;
+	grid-template-rows: 165px auto;
+	grid-template-areas: 'pesquisa doc' 'filtro doc';
+	/*	border-top: 3px solid #003f65;
+	padding-top: 1em;*/
+}
+#corpopaginajurisprudencia.clsCorpoPaginaResultadoJT {
+	grid-template-rows: 214px auto;
+}
+
+#corpopaginajurisprudencia.focoPesquisa {
+	grid-template-rows: 165px auto;
+	grid-template-areas: 'pesquisa pesquisa' 'filtro doc';
+}
+#corpopaginajurisprudencia.focoPesquisa.clsCorpoPaginaResultadoJT {
+	grid-template-rows: 214px auto;
+	grid-template-areas: 'pesquisa pesquisa' 'filtro doc';
+}
+/*#corpopaginajurisprudencia.clsCorpoPaginaResultadoJT {
+	grid-template-rows: 145px auto;
+}*/
+#corpopaginajurisprudencia.clsCorpoPaginaResultadoPP {
+	grid-template-rows: auto;
+	grid-template-areas: 'filtro doc';
+}
+
+.formularioRefinamento h3, .formularioRefinamentoFiltros h3 {
+	color: #003F65;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.5em 0;
+	background-color: transparent;
+	margin-bottom: 0;
+}
+
+.formularioRefinamento h4, .formularioRefinamentoFiltros h4 {
+	color: #003F65;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.5em 0;
+	background-color: transparent;
+	margin-bottom: 0;
+}
+
+.formularioRefinamento .col-auto {
+	padding: 0;
+}
+
+.formularioRefinamento i {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.5em;
+}
+
+.formularioRefinamento h3 span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#corpopaginajurisprudencia .formularioRefinamento h3 a {
+	color: #003F65;
+}
+
+#corpopaginajurisprudencia .boxFiltro a {
+	color: #053F65;
+}
+
+#frmConsultaRef>.row {
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.formularioRefinamento a {
+	text-decoration: none;
+}
+
+#idMostraPesquisaAvancadaRef {
+	border-radius: 4px;
+	padding: 4px 4px 3px 5px;
+	background-color: #BFC3C6;
+	color: #ffffff;
+	display: none;
+	border: none;
+	line-height: normal;
+}
+
+.formularioRefinamentoFiltros h4 i {
+	font-size: 2em;
+}
+
+.formularioRefinamentoFiltros h4 img {
+	margin: 2px;
+}
+
+#botaoLimparTodosFiltros, #idFecharPesquisaAvancadaRef {
+	border-radius: 50%;
+	padding: 4px 3px 3px 4px;
+	background-color: #DDDFE1;
+	color: #ffffff;
+	display: none;
+	border: none;
+	text-align: center;
+	line-height: 1em;
+}
+
+#fechaForm {
+	padding: 0.25em;
+	display: none;
+	line-height: normal;
+	color: #BFC3C6;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5em;
+}
+
+#fechaConfig, .fechaHist {
+	margin-left: -1em;
+	color: #BFC3C6;
+	background-color: transparent;
+	border: none;
+	font-size: 1em;
+}
+
+.fechaHist {
+	margin-bottom: 1em;
+}
+
+.formularioRefinamento #idMostrarConfiguracoesRef {
+	padding: 0.25em;
+	line-height: normal;
+	color: #003F65;
+	/*color: #BFC3C6;*/
+	background-color: transparent;
+	border: none;
+	font-size: 1.2em;
+	display: inline-block;
+	vertical-align: middle;
+
+	/*display: none;*/
+}
+
+.clsBotaoMaisRef {
+	padding-right: 0 !important;
+}
+
+#idFecharPesquisaAvancadaRef {
+	display: block;
+}
+/*
+#idMostraPesquisaAvancadaRef,
+#fechaForm:hover {
+	background-color: #BFC3C6;
+	color: #ffffff;
+}*/
+.focoPesquisa #fechaForm {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostraPesquisaAvancadaRef {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#idMostraPesquisaAvancadaRef h2 {
+	color: #003F65;
+	font-size: 2em;
+}
+
+.focoPesquisa #idMostraPesquisaAvancadaRef {
+	display: none;
+}
+
+.focoPesquisa #idMostrarPesquisaAvancadaRef2 {
+	display: inline-block;
+}
+
+#configVisualizacao button {
+	border-radius: 7px;
+	padding: 0.25em;
+	background-color: #C3D1D9;
+	color: #003F65;
+}
+
+#configVisualizacao button.ativo {
+	color: #FFFFFF;
+}
+
+.boxFiltro {
+	background-color: #F9F9F9;
+	padding: 1em;
+	border: 1px solid #DDDFE1;
+	margin: 0 1em 1em 1em;
+	border-radius: 12px;
+}
+
+.listadocumentos {
+	/*	max-height: 67vh;*/
+	max-height: 100%;
+	overflow: auto;
+	margin-right: 1em;
+	margin-left: 1em;
+	padding: 0;
+}
+
+.listaresumida .listadocumentos {
+	margin-right: 0;
+	margin-left: 0;
+	border-radius: 12px;
+}
+/*.navegacaoDocumento {
+}*/
+.documentoWrapper {
+	background-color: #F9F9F9;
+	padding: 1em;
+	border-bottom: 1px solid #DDDFE1;
+	border-left: 1px solid #DDDFE1;
+	border-right: 1px solid #DDDFE1;
+	margin: 0;
+}
+
+.documento {
+	border: 1px solid #DDDFE1;
+	background-color: #FFFFFF;
+	margin: 0 0 1em 0;
+	border-radius: 12px;
+}
+
+.documento.docSumula {
+	border: none;
+}
+
+.listaresumida .clsHeaderDocumento, .documento .clsHeaderDocumento {
+	font-family: Ubuntu, Arial, sans-serif;
+	background-color: #003F65;
+	border: 1px solid #003F65;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	color: #FFFFFF;
+	align-items: center;
+	padding: 0.25em 0;
+}
+
+.listaresumida .clsHeaderDocumento {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.listaresumida .clsHeaderDocumento .text-left {
+	text-align: left;
+}
+
+.documento .clsIconesAcoes img {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.documento .clsIconesAcoes img:hover {
+	opacity: 0.5;
+}
+
+.clsHeaderDocumento h3 {
+	margin: 0;
+}
+
+.documento .clsIconesAcoes a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.documento .clsIdentificacaoDocumento {
+	text-align: center;
+}
+
+.formularioRefinamento .has-float-label>label, .formularioRefinamento .has-fixed-float-label>label,
+	.formularioRefinamento legend {
+	font-size: 0.75em;
+}
+
+.formularioRefinamento h3 {
+	font-size: 1.3em;
+}
+
+#formularioAvancadoRef {
+	display: none;
+}
+
+#frmConsultaRef .form-row {
+	align-items: center;
+}
+
+i.clsExcluirItem {
+	background-color: #DDDFE1;
+	color: #FFFFFF;
+	border-radius: 50%;
+	padding: 4px 4px 3px 3px;
+	text-align: center;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+	line-height: 1em;
+}
+
+#corpopaginajurisprudencia .outrasBasesResultado a {
+	color: #179AB4;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#corpopaginajurisprudencia .outrasBasesResultado a:before {
+	font-family: IcoFont;
+	content: "\ea98";
+}
+
+.blocoMensagem {
+	font-family: Ubuntu, Arial, sans-serif;
+	background-color: #ffffff;
+	border: 1px solid #EAEAEA;
+	border-radius: 12px;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-template-rows: auto auto;
+	grid-template-areas: 'gaHeader gaHeader' 'gaCorpo gaImagem';
+}
+
+.blocoMensagem .headerMensagem {
+	grid-area: gaHeader;
+	background-color: #003F65;
+	border: 1px solid #003F65;
+	color: #FFFFFF;
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	line-height: 2em;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.blocoMensagem .corpoMensagem {
+	padding: 2em 4em;
+	grid-area: gaCorpo;
+	color: #575756;
+	font-weight: bold;
+}
+
+.blocoMensagem .destaqueMensagem {
+	color: #003F65;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1em 0;
+	font-size: 1.8em;
+}
+
+.blocoMensagem .erroMensagem {
+	color: #B2101D;
+	margin: 1em 0;
+}
+
+.blocoMensagem .outrasBasesMensagem {
+	margin: 1em 0;
+}
+
+.blocoMensagem .imagemMensagem, .blocoMensagem .imagemMensagemJT {
+	grid-area: gaImagem;
+	align-self: center;
+	justify-self: center;
+}
+
+.blocoMensagem .imagemMensagem img, .blocoMensagem .imagemMensagemJT img
+	{
+	max-width: 80%;
+	cursor: pointer;
+}
+
+.infoPesquisa {
+	align-items: start;
+}
+
+.infoPesquisa .numDocs {
+	font-weight: bold;
+	color: #575756;
+}
+
+.clsCriterioPesquisa {
+	margin-right: 33px;
+}
+
+.infoPesquisa .clsCriterioPesquisa {
+	/*	max-height: 4.5em;
+	overflow-y: auto;*/
+	position: relative;
+}
+
+.infoPesquisa .clsCriterioPesquisaPP {
+	max-height: 100%;
+}
+
+.infoPesquisa .clsCriterioPesquisa .clsCompleto {
+	display: none;
+}
+
+.infoPesquisa .clsCriterioPesquisa .clsPrimeiraLinha {
+	display: inline-block;
+}
+
+.infoPesquisa .clsCriterioPesquisa:hover .clsCompleto {
+	display: inline-block;
+	position: absolute;
+	background-color: #F9F9F9;
+	z-index: 3;
+	padding: 0.5em;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+	top: 2em;
+	left: 0;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	/*    border-bottom: 1px solid #EAEAEA;*/
+}
+
+.infoPesquisa .clsCriterioPesquisa:hover .clsCompleto:before {
+	border-bottom: 0.75em solid #EAEAEA;
+	border-left: 0.75em solid transparent;
+	border-right: 0.75em solid transparent;
+	content: '';
+	left: 1em;
+	display: inline-block;
+	position: absolute;
+	top: -0.75em;
+}
+
+.infoPesquisa .clsCriterioPesquisa .clsPesquisaPronta {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.ui-datepicker {
+	z-index: 10000 !important;
+}
+
+.listaresumida {
+	border: 1px solid #DDDFE1;
+	background-color: #FFFFFF;
+	margin: 1em;
+	border-radius: 12px;
+}
+
+.clsRefinamentoPP {
+	display: none;
+}
+
+.clsCorpoPaginaResultadoPP .documentoWrapper {
+	border-top: 1px solid #DDDFE1;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.corpoPaginaResultadoPP {
+	margin: 15px 0;
+}
+.itemlistadocumentos h4 {
+	color: #575756;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.text-center .btn-juris, .text-center .btn-juris-azul {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.btn-operador {
+	color: #575756;
+	border-radius: 4px;
+	padding: 0.5em;
+	border: 1px solid #BFC3C6;
+	text-align: center;
+	min-width: 3em;
+}
+
+.btn-juris, .btn-juris-azul {
+	font-family: Ubuntu, Arial, sans-serif !important;
+	font-size: 0.75rem;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	color: #003F65 !important;
+	background-color: #E4E9EC !important;
+	/*background-color: transparent!important;*/
+	border: none;
+}
+.btn-clear {
+    border: solid 1px rgba(191, 195, 198, 0.8);
+	background-color: #F9F9F9;
+	color: #2465a4;
+}
+.btn-juris:hover {
+	color: #003F65 !important;
+	background-color: #D2D4D5 !important;
+}
+
+.btn-juris-azul {
+	color: #FFFFFF !important;
+	background-color: #053F65 !important;
+}
+
+.btn-juris-azul:hover {
+	color: #FFFFFF !important;
+	background-color: rgba(0, 105, 143, 10) !important;
+}
+
+.btn-juris i, .btn-juris-azul i {
+	font-size: 1.2em;
+}
+
+.btn-search-inf {
+    background-color:#c3d1d9;
+    color:#2465a4;
+}
+.btn-search-inf:hover {
+    background-color:rgba(0,105,143,10)!important;
+    color: #FFFFFF!important;
+}
+.btn-juris-inf {
+	color:rgba(0,105,143,10)!important;
+}
+.btn-juris:focus, .btn-juris-azul:focus {
+	outline: none;
+	border: none;
+}
+
+.btn-juris>span, .btn-juris-azul>span {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.btn-juris>span.clsToolTip, .btn-juris-azul>span.clsToolTip {
+	display: block;
+}
+
+.btn-close-modal {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	font-weight: bold;
+	padding: 0.25em;
+	background-color: #179AB4;
+	color: #003F65;
+	border: none;
+	line-height: normal;
+	font-size: 1.2em;
+	margin-left: 1em;
+}
+
+.clsConteudoFiltro label:last-child {
+	margin-bottom: 0;
+}
+
+.formularioRefinamentoFiltros h3 i {
+	font-size: 1.5em;
+}
+
+.clsConteudoFiltro .data,
+.clsConteudoFiltro #tema1Ref,
+.clsConteudoFiltro #tema2Ref {
+	max-width: 8em;
+}
+/*
+.clsConteudoFiltro {
+	overflow-y: auto;
+}
+*/
+.clsConteudoFiltro #botaoAplicarFiltrosDTPB, .clsConteudoFiltro #botaoAplicarFiltrosDTDE, .clsConteudoFiltro #botaoAplicarFiltrosDTDJ,
+.clsConteudoFiltro #botaoAplicarFiltrosTEMA
+	{
+	margin: 2px;
+	padding: 3px 5px;
+}
+
+.clsConteudoFiltro #botaoAplicarFiltrosDTPB i, .clsConteudoFiltro #botaoAplicarFiltrosDTDE i, .clsConteudoFiltro #botaoAplicarFiltrosDTDJ i,
+.clsConteudoFiltro #botaoAplicarFiltrosTEMA i
+	{
+	font-size: 1em;
+}
+
+/* modal dialog */
+/* The Modal (background) */
+.juri-modal {
+	display: none; /* Hidden by default */
+	position: absolute; /* Stay in place */
+	z-index: 100; /* Sit on top */
+	padding-top: 2em; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.juri-modal-content {
+	background-color: #F9F9F9;
+	margin: auto;
+	padding: 1em;
+	border: 1px solid #DDDFE1;
+	max-width: 80%;
+	max-height: 80%;
+	/*overflow-y: auto;*/
+	width: 1440px;
+	/*width: 1396px;*/
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#formularioAvancadoRef {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 12px;
+}
+
+#idFecharPesquisaAvancadaRef {
+	font-size: 14px;
+	float: right;
+}
+
+#formularioAvancadoRef h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	color: #003F65;
+}
+
+#corpopaginajurisprudencia .docSumula a.clsPesquisarAcordaos {
+	color: #179AB4;
+}
+
+.temHint {
+	position: relative;
+	display: inline-block;
+}
+
+.textoHint {
+	display: none;
+	text-align: left;
+	padding: 0.5em 1em;
+	margin-top: 7px;
+	border-radius: 4px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	white-space: nowrap;
+	/*width: fit-content;*/
+	background-color: #05B6D5;
+	color: #FFFFFF;
+	text-transform: none;
+	/*border: 1px solid #EAEAEA;*/
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	z-index: 101;
+}
+
+.listaODS .textoHint, .clsConteudoFiltro .textoHint {
+	width: 300px;
+	white-space: normal;
+}
+
+.temHint:hover  .textoHint {
+	display: block;
+}
+
+#navegacao .textoHint, .left .textoHint, .clsMostraBRS .textoHint,
+	.clsMostraAmigavel .textoHint {
+	right: 0;
+	left: auto;
+}
+
+.textoHint:before {
+	border-bottom: 7px solid #05B6D5;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -7px;
+	left: 1em;
+	opacity: 1;
+}
+
+#navegacao .textoHint:before, .left .textoHint:before, .clsMostraBRS .textoHint:before,
+	.clsMostraAmigavel .textoHint:before {
+	left: auto;
+	right: 1em;
+}
+
+.barraIconesNavegacao .temHint {
+	white-space: nowrap;
+}
+
+.t-verde, .t-verde i {
+	color: #179AB4;
+}
+
+.t-verde .textoHint:before {
+	border-bottom-color: #179AB4;
+}
+
+.t-verde .textoHint {
+	background-color: #179AB4;
+}
+
+.gridSumula {
+	display: grid;
+	grid-template-columns: 43px 160px auto 100px;
+	font-family: Ubuntu, Arial, sans-serif;
+	align-items: center;
+}
+
+.gridSumula>div {
+	padding: 1em;
+}
+
+.gridSumula .blocoNumSumula, .gridSumula .blocoIcones, .gridSumula .blockCheck
+	{
+	align-self: center;
+	justify-self: center;
+	padding: 1em;
+}
+
+.gridSumula a {
+	text-decoration: none;
+}
+
+.gridSumula .blocoIcones a {
+	display: block;
+}
+
+.gridSumula .blocoIcones i {
+	font-size: 2em;
+}
+
+.gridSumula .blocoIcones i+.textoHint {
+	top: 22px;
+}
+
+.gridSumula .blocoNumSumula {
+	background-color: #E8E8E8;
+	border-radius: 12px;
+	text-align: center;
+	color: #575756;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 130px;
+}
+
+#corpopaginajurisprudencia .gridSumula .blocoNumSumula a {
+	color: #575756;
+	text-decoration: none;
+}
+
+.gridSumula .blocoNumSumula a>span {
+	display: block;
+	padding: 0.15em 0;
+}
+
+.gridSumula .blocoNumSumula .clsINDE {
+	color: #B2101D;
+	font-weight: bold;
+}
+
+.gridSumula .blocoNumSumula .numeroSumula {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.gridSumula .blocoVerbete .clsVerbete {
+	display: block;
+	padding: 0.5em 0;
+}
+
+.gridSumula .blocoVerbete .clsSumCancelada {
+	display: block;
+	padding: 1em 0 0 0;
+	font-weight: bold;
+}
+
+.gridSumula .blocoVerbete .clsCOM {
+	font-style: italic;
+	color: #B2101D;
+	display: block;
+	padding: 0.5em 0;
+}
+
+.docTexto .clsCOM {
+	font-style: italic;
+	font-weight: bold;
+}
+
+#corpopaginajurisprudencia .gridSumula .blocoVerbete a {
+	color: inherit;
+}
+
+.group-icon {
+	display: block;
+	position: relative;
+}
+
+.group-icon i {
+	position: absolute;
+}
+
+.group-icon i.fa-file {
+	font-size: 30px;
+	top: 0;
+	left: 0;
+}
+
+.group-icon i.fa-eye {
+	font-size: 15px;
+	color: #FFFFFF;
+	top: 12px;
+	left: 3px;
+}
+
+.clsBtnOrdenacao i {
+	font-size: 1.2em;
+}
+
+.juri-modal .docSumula {
+	height: 100%;
+	overflow-y: auto;
+	margin: 0;
+	border: none;
+	padding: 1em 2em;
+}
+
+.juri-modal-content .clsHeaderDocumento {
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.detalheDocumento .juri-modal-content {
+	padding: 0;
+}
+
+.detalheDocumento .clsHeaderDocumento .divCell:nth-child(1) {
+	width: 20%;
+}
+
+.detalheDocumento .clsHeaderDocumento .divCell:nth-child(2) {
+	text-align: center;
+}
+
+.detalheDocumento .clsHeaderDocumento .divCell:nth-child(2) h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.detalheDocumento .clsHeaderDocumento .divCell:nth-child(3) {
+	width: 20%;
+}
+
+.clsIconesSumulas {
+	text-align: right;
+}
+
+.clsIconesSumulas a span {
+	display: block;
+	font-size: 1.5em;
+}
+
+.clsIconesSumulas a {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+	color: #FFFFFF !important;
+}
+
+.clsIconesSumulas a:hover {
+	text-decoration: none;
+}
+
+.clsIconesSumulas .clsFechaEspelhoSumula i {
+	display: block;
+	font-size: 1.5em;
+	border-radius: 50%;
+	background-color: #179AB4;
+	padding: 0.25em;
+}
+
+#corpopaginajurisprudencia a.clsLinkVejaTambem {
+	color: #179AB4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.clsLinkVejaTambem {
+	display: block;
+	text-align: right;
+}
+
+.clsLinkVejaTambem span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.clsJT {
+	background-image: url("/recursos/imagens/iconeRef-JT.png");
+}
+
+.clsAcordaos {
+	background-image: url("/recursos/imagens/iconeAcordaos.png");
+}
+
+.clsACOR {
+	background-image: url("/recursos/imagens/iconeRef-ACOR.png");
+}
+
+.clsRR {
+	background-image: url("/recursos/imagens/iconeRef-REP.png");
+}
+
+.clsRGSTF {
+	background-image: url("/recursos/imagens/stf.png");
+}
+
+.clsPP {
+	background-image: url("/recursos/imagens/iconeRef-PP.png");
+}
+
+.clsJT {
+	background-image: url("/recursos/imagens/iconeRef-LA.png");
+}
+
+.clsINF {
+	background-image: url("/recursos/imagens/iconeRef-INFJ.png");
+}
+
+.clsSU {
+	background-image: url("/recursos/imagens/iconeRef-SU.png");
+}
+
+.clsLA {
+	background-image: url("/recursos/imagens/iconeRef-LA.png");
+}
+
+.saibaMais ul {
+	padding: 0.5em 2em 0.5em 0;
+	list-style-type: none;
+}
+
+.saibaMais li {
+	display: block;
+	margin: 0.25em 0;
+}
+
+.saibaMais a {
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	padding-left: 0.5em;
+	padding-left: 2em;
+	display: inline-block;
+	vertical-align: middle;
+	color: #179AB4 !important;
+	max-width: calc(100% - 30px);
+}
+
+#aplicarFiltroRamoDoDireitoPP {
+	display: none;
+}
+
+.clsControlaFiltros, .clsControlaFiltros a {
+	display: none;
+}
+
+.formWrapper, .blocoPesquisaAvancada {
+	border-radius: 12px;
+}
+
+.ui-widget-header {
+	background-color: transparent;
+}
+
+.btn:active {
+	border: none;
+}
+
+#maisRef .textoHint {
+	right: 0;
+	left: auto;
+}
+
+#maisRef .textoHint:before {
+	left: auto;
+	right: 1em;
+}
+
+#formularioAvancadoRef .juri-modal-content {
+	position: absolute;
+	max-width: max-content;
+	max-height: max-content;
+	overflow-y: auto;
+}
+
+.docTitulo .hint {
+	left: auto;
+	right: auto;
+	width: 90%;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.docTitulo .hint:before {
+	left: 1em;
+	right: auto;
+}
+
+.modalSumula .modal-dialog {
+	max-width: 800px;
+}
+
+.modalSumula .modal-content {
+	border-radius: 12px;
+}
+
+.modalJT .modal-header {
+	background-color: #E8E8E8;
+}
+
+.modalSumula .modal-header {
+	padding: 0;
+}
+
+.modalSumula .modal-title {
+	width: 100%;
+}
+
+.modalSumula .clsHeaderDocumento {
+	width: 100%;
+}
+
+.modalSumula .clsHeaderDocumento .row {
+	align-items: center;
+}
+
+.modalSumula .saibaMais h4 {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#formularioAvancadoRef .modal-dialog {
+	max-width: 1320px;
+}
+
+#idMostraPesquisaAvancadaRef2 {
+	/*display: none;*/
+	display: block;
+}
+/*
+.focoPesquisa #idMostraPesquisaAvancadaRef2 {
+	display: block;
+}
+*/
+#idBotoesOperadores .hideHint {
+	display: block !important;
+}
+
+.clsTriagemDeAcordaos .divTabela {
+	width: 100%;
+}
+
+.clsTriagemDeAcordaos .label {
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #C0C0C0;
+	text-align: center;
+}
+
+.clsTriagemDeAcordaos form .label {
+	font-size: 1em;
+	font-weight: bold;
+	background-color: transparent;
+	text-align: right;
+}
+
+.clsTriagemDeAcordaos .divCell {
+	padding: 0.5em;
+}
+/*.btn-menor {
+	margin: 0 0 0 2px;
+	padding: 0 0 0 2px;
+}*/
+.inativo {
+	opacity: 50%;
+}
+
+input#pesquisaLivre::-webkit-calendar-picker-indicator,
+input.siglajud::-webkit-calendar-picker-indicator {
+	display: none;
+	color: transparent;
+}
+
+.clsConjuntoCamposLegislacao {
+	margin-bottom: 0.5rem;
+	padding-top: 0.25rem !important;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+}
+
+.clsConjuntoCamposLegislacao .btn-close {
+	background-size: 0.75em;
+}
+
+#idConjuntoCamposLegislacao0 {
+	padding-top: 1.5rem !important;
+}
+
+#idConjuntoCamposLegislacao {
+	position: relative;
+}
+
+#idConjuntoCamposLegislacao .icofont-question {
+	position: absolute;
+	left: -1.6rem;
+	top: 1em;
+	color: #003f65;
+	background-color: #C3D1D9;
+	border-radius: 50%;
+	padding: 6px 5px 4px 5px;
+}
+
+#idConjuntoCamposLegislacao .hint {
+	right: auto;
+	left: -3em;
+	top: 3em;
+}
+
+#idConjuntoCamposLegislacao .hint:before {
+	left: 1em;
+	right: auto;
+}
+
+.clsConjuntoCamposLegislacao .row .form-group select,
+	.clsConjuntoCamposLegislacao .row .form-group input[type=text] {
+	height: 2.25rem;
+}
+
+.clsConjuntoCamposLegislacao .row:nth-child(3) .form-group {
+	/*margin-bottom: 0;*/
+}
+
+.clsConjuntoCamposLegislacao .row:nth-child(3) .form-group:nth-child(even)
+	{
+	/*padding-left: 0.15em;*/
+}
+
+.clsConjuntoCamposLegislacao .row:nth-child(3) .form-group:nth-child(odd)
+	{
+	/*padding-right: 0.15em;*/
+}
+
+.process-botoes .textoHint {
+	white-space: nowrap;
+}
+
+.transparente {
+	opacity: 0 !important;
+}
+/*
+#dtpb1 ~ label,
+#dtde1 ~ label {
+	top: 1.7em;
+	left: 1.5em;
+}
+#dtpb1:focus ~ label,
+#dtde1:focus ~ label{
+	top: -0.5em;
+}
+*/
+.divTema a i {
+	all: unset;
+	font-style: italic;
+}
+
+.clsPesquisaBRS, .clsPesquisaAmigavel b {
+	color: #00658A;
+	font-weight: bold;
+}
+
+.clsPesquisaAmigavel ~.clsPesquisaBRS, .clsPesquisaAmigavel ~.clsMostraAmigavel
+	{
+	display: none;
+}
+
+.clsMostraBRS, .clsMostraAmigavel {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	right: -33px;
+	top: 0;
+}
+
+.clsMostraBRS img, .clsMostraAmigavel img {
+	height: 16px;
+	padding-bottom: 4px;
+}
+
+.divPesquisaSatisfacao {
+	/*	border-radius: 12px;
+	margin-right: 1em;
+	margin-left: 1em;
+	border: 1px solid #DDDFE1;*/
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #575756;
+}
+
+.clsIconesAcoes a {
+	display: inline-block;
+	position: relative;
+	height: 2em;
+	width: 2em;
+}
+
+.clsIconesAcoes i {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 2em;
+	top: 0;
+	left: 0;
+}
+
+.clsIconesAcoes i+i {
+	color: #003f65;
+	top: 12px;
+	left: 2px;
+	font-size: 1em;
+}
+
+.acoesdocumentoSuce a:after, .saibaMais a:after, .barraDocAfetacao a:after,
+	.barraDocRepetitivo a:after, #idListaOutrosProdutos ul a:after {
+	content: "\f064";
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.clsEmentaCompleta {
+	display: none;
+}
+
+.clsResumoEmenta button, .clsEmentaCompleta button {
+	color: #179AB4;
+	border: none;
+	background-color: transparent;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.div_iconesJuris, 
+.div_iconesJuris2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	align-items: stretch;
+}
+
+.div_iconesJuris>div:nth-child(7) {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.div_iconesJuris>div:nth-child(8) {
+	grid-column-start: 4;
+	grid-column-end: 6;
+}
+
+.clsLinksSumulas {
+	display: block;
+	/*	grid-template-columns: 1fr 1fr;
+	align-items: center;*/
+}
+
+.clsLinksSumulas .textoHint {
+	width: 150px;
+	white-space: normal;
+}
+
+.clsLinkSumulasAnotadas>* {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em;
+	max-width: 50%;
+}
+
+.clsLinksArquivosSumulas {
+	text-align: right;
+}
+
+.clsLinksArquivosSumulas a {
+	display: block;
+	padding: 0.5em;
+}
+
+.clsLinksArquivosSumulas span.glyphicon, .clsLinksArquivosSumulas i {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2em;
+	padding: 0 0.25em;
+}
+
+.b-azul-claro {
+	background-color: #00658a !important;
+}
+
+.floatRight {
+	float: right;
+}
+
+#filtroRamoDoDireito {
+	max-height: 35vh;
+	overflow-y: auto;
+	padding-right: 0.5em;
+}
+
+.itemlistadocumentos:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.clsTeseRevisada {
+	text-align: right;
+	position: relative;
+}
+
+.clsIconeTeseDesatualizada, .clsIconeTeseAtualizada {
+	display: block;
+	float: right;
+	font-weight: bold;
+	color: #cd0505;
+	font-family: ubuntu, sans-serif;
+	margin: 1em 0;
+}
+
+.clsIconeTeseAtualizada {
+	cursor: pointer;
+}
+
+.clsIconeTeseDesatualizada {
+	font-weight: normal;
+}
+
+.clsIconeTeseDesatualizada i {
+	font-size: 1.5em;
+}
+
+.clsBtnHistorico {
+	color: #2465A4;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	font-family: ubuntu, sans-serif;
+	font-weight: bold;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.clsBtnHistorico.ativo {
+	background-color: #C0C0C0 !important;
+}
+
+.clsMostraHistorico {
+	display: none;
+	text-align: left;
+	border: 1px solid #c0c0c0;
+	position: absolute;
+	right: 0;
+	padding: 1em 1.5em;
+	border-radius: 4px;
+	z-index: 30;
+	margin-top: 0.5em;
+	text-align: left;
+	line-height: 1.5em;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	background-color: #FFFFFF;
+}
+
+.clsMostraHistorico ul {
+	margin: 0;
+}
+
+.clsIconesAcoes i.fa-info {
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	color: #003F65;
+	margin-top: 2px;
+	padding: 2px 6px 3px 6px;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 1px;
+}
+
+.clsAjuda ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.clsAjuda li * {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+}
+
+.clsAjuda li {
+	white-space: nowrap;
+}
+
+.clsAjuda li .glyphicon {
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+.clsAjuda .divCell {
+	padding-top: 1em;
+	padding-right: 2em;
+}
+
+.clsAjuda .divCell:nth-child(1) {
+	padding-top: 3em;
+}
+
+.clsAjuda .divCell:nth-child(3) {
+	padding-right: 0;
+}
+
+.clsQuadroBranco {
+	background-color: #FFFFFF;
+	color: #004164;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.clsQuadroBranco span {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0 2em;
+	font-size: 1.5em;
+}
+
+.clsQuadroBranco button {
+	background-color: #179AB4;
+	color: #FFFFFF;
+	border-radius: 7px;
+	border: none;
+	padding: 0.5em 1em;
+	font-size: 1rem;
+	font-weight: bold;
+	vertical-align: baseline;
+}
+
+.clsDivAvisos .modal-dialog {
+	max-width: 100%;
+	width: fit-content;
+	height: auto;
+	margin: auto;
+}
+
+.clsDivAvisos .modal-content {
+	width: auto;
+	height: auto;
+}
+
+.clsDivAvisos .modal-content img {
+	width: auto;
+	height: 88vh;
+}
+
+.clsDivAvisos .modal-content.clsExpande img {
+	width: auto;
+	height: auto;
+}
+
+.clsQuadroBranco button.btn-close {
+	background-color: transparent;
+}
+
+.boxFiltro select {
+	max-width: 100%;
+}
+
+#linkSaibaMaisPDF {
+	z-index: 1000;
+	background-color: transparent;
+	color: transparent;
+	position: absolute;
+	display: block;
+	bottom: 6%;
+	left: 9%;
+	width: 11%;
+	height: 5%;
+}
+
+.gridEdicaoJT {
+	display: grid;
+	grid-template-columns: 160px auto;
+	font-family: Ubuntu, Arial, sans-serif;
+	align-items: start;
+	width: 100%;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.gridEdicaoJTAtualizada {
+	display: grid;
+	grid-template-columns: auto auto 285px;
+	font-family: Ubuntu, Arial, sans-serif;
+	align-items: center;
+	width: 100%;
+}
+
+.gridEdicaoJT>div, .gridEdicaoJTAtualizada>div {
+	padding: 1em;
+	/*border: 1px solid red;*/
+}
+
+.gridEdicaoJT .botoes {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.gridEdicaoJT a, .gridEdicaoJTAtualizada a {
+	text-decoration: none;
+}
+
+.gridEdicaoJT .botoes a, .gridEdicaoJTAtualizada .botoes a {
+	margin: 0 10px;
+}
+
+.gridEdicaoJT .blocoNumSumula, .gridEdicaoJTAtualizada .blocoNumSumula {
+	background-color: #E8E8E8;
+	border-radius: 12px;
+	text-align: center;
+	color: #575756;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 130px;
+	/*align-self: center;*/
+	justify-self: center;
+	padding: 1em;
+}
+
+.gridEdicaoJT .blocoNumSumula a, .gridEdicaoJTAtualizada .blocoNumSumula a
+	{
+	color: #575756;
+	text-decoration: none;
+}
+
+.gridEdicaoJT .blocoNumSumula a>span {
+	display: block;
+	padding: 0.15em 0;
+}
+
+.gridEdicaoJTAtualizada .blocoNumSumula a>span {
+	display: inline-block;
+	padding: 0.15em;
+}
+
+.gridEdicaoJT .blocoNumSumula .numeroSumula, .gridEdicaoJTAtualizada .blocoNumSumula .numeroSumula
+	{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.clsListaEdicoesJT .clsVerbete, .clsListaEdicoesJT .clsLabel,
+	.clsListaEdicoesJT .clsData {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsListaEdicoesJT a {
+	text-decoration: none;
+}
+
+.clsListaEdicoesJT a:hover {
+	text-decoration: underline;
+}
+
+ul.temasPP {
+	margin: 0;
+}
+
+ul.temasPP>li {
+	padding: 0.5em 0;
+}
+
+ul.temasPP a {
+	text-decoration: none;
+}
+
+ul.temasPP a:hover {
+	text-decoration: underline;
+}
+
+.gridEdicaoJT .clsVerbete {
+	display: block;
+	font-weight: bold;
+	padding: 0.5em 0;
+	font-size: 1.2em;
+}
+
+.gridEdicaoJTAtualizada .clsVerbete {
+	display: block;
+	font-weight: bold;
+	padding: 0.5em 0;
+}
+
+.gridEdicaoJT .clsLabel {
+	display: block;
+	padding: 0.15em 0;
+}
+
+.gridEdicaoJTAtualizada .clsLabel {
+	display: inline-block;
+	padding: 0.15em;
+}
+
+.apresentacaoJT img {
+	width: 100px;
+}
+
+.apresentacaoJT {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.boxFiltro .textoExplicativo {
+	display: block;
+}
+.clsUltimaEdicao, .clsTodasEdicoes {
+    padding: 0.5em 3em;
+    min-height: 1vh;
+    background-color: #FFF;
+    border-radius: 12px;
+}
+.ui-tabs .clsUltimaEdicao, .ui-tabs .clsTodasEdicoes {
+    box-shadow: 0px 0px 6px 3px #d5d3d3;
+}
+.iconeFiltro {
+    height: 1.7em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.iconeFiltro ~ span {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 80%;
+}
+
+.clsConteudoFiltro img {
+	height: 40px;
+}
+
+.clsConteudoFiltro select, .formularioRefinamento select {
+	font-size: 13px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 12px;
+}
+
+.divJurisprudenciaTematicaLista .ui-tabs-panel {
+	border-right: 1px solid rgba(229, 229, 229, 1);
+	border-left: 1px solid rgba(229, 229, 229, 1);
+	border-bottom: 1px solid rgba(229, 229, 229, 1);
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	background: #E8E8E8;
+    padding: 2em;
+}
+
+.divJurisprudenciaTematicaLista h3 {
+	font-size: 1.6em;
+	font-family: Ubuntu, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #003f65;
+	margin: 0.5em 0;
+}
+
+.divJurisprudenciaTematicaLista h4 {
+	font-size: 1.2em;
+	font-family: Ubuntu, Arial, sans-serif;
+	/*text-transform: uppercase;*/
+	font-weight: bold;
+	color: #003f65;
+	margin: 0.5em 0;
+	text-align: left;
+}
+
+.divJurisprudenciaTematicaLista h4 span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.divJurisprudenciaTematicaLista h4 i {
+	color: #003f65;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.clsIconeCarregando {
+	width: 22px;
+	height: auto;
+}
+
+.clsAbas .col {
+	border: 1px solid #DDDFE1;
+	background-color: #f9f9f9;
+	text-align: center;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: bold;
+}
+
+.clsAbas .col.ativo {
+	background-color: #E8E8E8;
+	border-bottom-color: #E8E8E8;
+}
+
+.clsAbas .col a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.clsListaEdicoesJT>ul {
+	list-style-type: none;
+	max-height: 20em;
+	overflow-y: auto;
+	border: solid 1px rgba(191, 195, 198, 0.8);
+	border-radius: 7px;
+	border-radius: 4px;
+	padding: 6px 12px;
+	color: rgba(160, 160, 160, 1);
+}
+
+.clsListaEdicoesJT>ul li {
+	display: block;
+	padding: 0.15em 0;
+}
+
+.clsPaginaAvisos {
+	font-size: 13px;
+}
+
+.clsEdicaoCompleta {
+	max-height: 20em;
+	overflow-y: auto;
+	border: solid 1px rgba(191, 195, 198, 0.8);
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin: 0.5em;
+}
+
+.clsListaEdicoesJT .row, #listaEdicoesRecentesJT .row {
+	margin: 0;
+	width: 100%;
+	align-items: center;
+}
+
+.divJurisprudenciaTematicaLista .accordion-button.collapsed::after {
+	display: none;
+}
+
+.divJurisprudenciaTematicaLista .accordion-button:not(.collapsed)::after
+	{
+	display: none;
+}
+
+.divJurisprudenciaTematicaLista .accordion-button.collapsed {
+	color: #003F65;
+	background-color: #ffffff;
+}
+
+.divJurisprudenciaTematicaLista .accordion-button:not(.collapsed) {
+	color: #003F65;
+	background-color: #f0f0f2;
+}
+
+.btn-ocultar-JT, .btn-mostrar-JT, .btn-visualizar-JT, .btn-download-JT,
+	.btn-tema {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 105px;
+	white-space: nowrap;
+	text-align: center;
+	margin: 0 10px;
+}
+
+#corpopaginajurisprudencia a.btn-tema {
+	width: auto;
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #707070;
+	font-weight: bold;
+}
+
+.btn-ocultar-JT i, .btn-visualizar-JT i, .btn-download-JT i, .btn-tema i,
+	.btn-mostrar-JT i {
+	font-size: 2em;
+	margin-right: 3px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.btn-tema i {
+	font-size: 1.5em;
+}
+
+.btn-tema>* {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.btn-ocultar-JT:hover, .btn-visualizar-JT:hover, .btn-download-JT:hover,
+	.btn-mostrar-JT:hover, .btn-tema:hover {
+	text-decoration: none !important;
+}
+
+.clsListaEdicoesJT h6 {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 0;
+	margin: 0;
+}
+
+.clsListaEdicoesJT .blocoVerbete {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsEdicao {
+	display: block;
+	padding: 0.25em 0;
+}
+
+.clsEdicao a {
+	text-decoration: none;
+}
+
+.clsEdicao a:hover {
+	text-decoration: underline;
+}
+
+.clsDataRedacaoAnterior {
+	display: block;
+}
+
+.clsRedacaoAnterior {
+	display: none;
+}
+
+.divJurisprudenciaTematicaLista .clsUltimaEdicao h4,
+	.divJurisprudenciaTematicaLista .clsEdicoesAtualizadas h4 {
+	font-size: 1.3em;
+	text-align: left;
+	padding: 0;
+}
+
+.divJurisprudenciaTematicaLista .clsTemasJT h4 {
+	padding-left: 26px;
+	padding-bottom: 0;
+}
+
+.divJurisprudenciaTematicaLista h4+h4 {
+	font-size: small;
+}
+
+.divJurisprudenciaTematicaLista .saibaMais {
+	margin-left: 3em;
+}
+
+.saibaMais h5 {
+	padding: 1em 0;
+	font-size: 1em;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-weight: bold;
+	color: #003f65;
+	text-align: left;
+}
+
+.clsConteudoTabs {
+	padding-bottom: 1em;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom: 1px solid #DDDFE1;
+	border-left: 1px solid #DDDFE1;
+	border-right: 1px solid #DDDFE1;
+}
+
+.clsCheckOrdem label, .clsCheckAgrupar label {
+	font-size: 11px;
+}
+
+.btn-ocultar-JT, .btn-visualizar-JT, .btn-ocultar-JT:hover,
+	.btn-mostrar-JT:hover, .btn-visualizar-JT:hover {
+	background-color: #003F65 !important;
+	color: #FFFFFF !important;
+}
+
+.clsHeaderEdicaoJT {
+	font-family: Ubuntu, Arial, sans-serif;
+	background-color: #003F65;
+	color: #FFFFFF;
+	display: block;
+	padding: 12px;
+	border-radius: 4px;
+}
+
+.clsListaTemasPP {
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.clsListaTemasPP .saibaMais {
+	margin-top: 1.5em;
+}
+
+.clsMateriaJT, .clsMateriaPP {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #003F65;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.clsTituloJT, .clsTituloPP {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.2em;
+	color: #003F65;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.clsMateriaPP {
+	font-size: 1.8em;
+	background-color: #003f65;
+	color: #FFFFFF;
+	padding: 0.25em 0.5em;
+	border-radius: 6px;
+	margin: 1em 0;
+}
+
+.clsTituloPP {
+	font-size: 1.4em;
+	margin: 1em;
+	background-color: #E6E6E6;
+	padding: 0.25em 0.5em;
+	border-radius: 6px
+}
+
+.divJurisprudenciaTematicaLista .clsTabs .clsEdicaoCompletaAcc h4 {
+	text-transform: none;
+	text-align: left;
+}
+
+.clsEdicaoCompletaAcc .divLinkPesquisa {
+	font-style: normal;
+	text-align: center;
+}
+
+.clsTemasJT {
+	padding: 2em;
+	border-top: 1px solid #e0e0e0;
+}
+
+.clsJulgadosJT>div {
+	padding: 0.25em 0;
+}
+
+.saibaMais a, .clsJulgadosJT a, .clsSubmitPesquisaTema a,
+	.clsEdicaoCompletaAcc a {
+	text-decoration: none;
+}
+
+.clsSubmitPesquisaTema a {
+	font-weight: bold;
+}
+
+.clsSubmitPesquisaTema {
+	clear: both;
+}
+
+.saibaMais a:hover, .saibaMais a:active, .clsJulgadosJT a:hover,
+	.clsJulgadosJT a:active, .clsSubmitPesquisaTema a:hover,
+	.clsSubmitPesquisaTema a:active, .clsEdicaoCompletaAcc a:hover,
+	.clsEdicaoCompletaAcc a:active {
+	text-decoration: underline;
+}
+
+.clsTeseModificada {
+	background-color: yellow;
+}
+
+@media print {
+	.noprint {
+		display: none;
+	}
+	.onlyprint {
+		display: block;
+	}
+	#formRefinamento {
+		display: none;
+	}
+	#idLinkTopoPagina {
+		display: none;
+	}
+	a {
+		text-decoration: none !important;
+	}
+	.corpoPaginaResultado {
+		width: 100%;
+		max-width: 100%;
+	}
+	pre {
+		border: none;
+		page-break-inside: auto;
+	}
+	.mensagemReproducaoAutorizada {
+		margin-top: 2em;
+	}
+	.listadocumentos {
+		width: 100%;
+		max-width: 100%;
+	}
+	.divCell, .itemlistadocumentos {
+		page-break-inside: avoid;
+	}
+	.docSumula .iconesAcoesSumulas {
+		display: none;
+	}
+	.documentoWrapper {
+		background-color: transparent !important;
+		border: none !important;
+		padding: 0 !important;
+	}
+	.listaresumida {
+		margin: 0 !important;
+		border: none;
+	}
+	.blocoVerbete {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+	.gridSumula {
+		grid-template-columns: 160px auto;
+	}
+	#corpopaginajurisprudencia {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+	.redacaoVersao {
+		display: none;
+	}
+	.redacaoAtual {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	pre {
+		white-space: normal;
+	}
+}
+
+.redacaoVersao {
+	display: none;
+	border: 1px solid #c0c0c0;
+	margin-bottom: 1em;
+	background-color: #FAFAFA;
+}
+
+.redacaoAtual {
+	display: block;
+	border-top: 1px solid #e0e0e0;
+	margin-bottom: 1em;
+	background-color: #FFFFFF;
+}
+
+.clsBotoesJT {
+	font-weight: bold;
+	font-family: Ubuntu;
+	padding: 1em 0;
+}
+
+.clsBotoesJT a {
+	display: inline-block;
+	padding: 0.5em
+}
+
+.iconeSaibaMais {
+	vertical-align: middle;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	border-radius: 6px;
+	background-size: 40px 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon_JTeses {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_jurisprudenciaTeses.svg");
+}
+
+.icon_LegisAplic {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_legislacao.svg");
+}
+
+.icon_pesqPront {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_pesquisaPronta.svg");
+}
+
+.icon_sumanot {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_sumulas.svg");
+}
+
+.icon_AcordaosPosteriores {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-InteiroTeor.svg");
+	background-size: auto;
+	background-position: right;
+	background-color: #179ab4;
+}
+.icon_RepetitivosIAC {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_repetitivos.svg");
+}
+
+.icon_inform {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_informativo.svg");
+}
+
+.icon_RepercussaoSTF {
+	background-image:
+		url(/recursos/interfacevisual/internet2022/img/icon_RepercussaoSTF.svg);
+	background-size: 36px 20px;
+	background-color: #00a8e7;
+}
+
+.navegacaoTema {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.navegacaoTema a, .navegacaoTema span.inativo {
+	font-size: 1em;
+	padding: 0.15em;
+}
+
+.labelNavegacao {
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.2em;
+	padding: 0.15em 2em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tabelaEdicoesJT {
+	width: 100%;
+	margin-top: 0.5em;
+}
+
+.tabelaEdicoesJT th {
+	font-family: Ubuntu, Arial, sans-serif;
+	text-align: left;
+	background-color: transparent
+}
+
+.tabelaEdicoesJT.versoes th:last-child {
+	text-align: right;
+}
+
+.tabelaEdicoesJT th, .tabelaEdicoesJT td {
+	padding: 0.5em;
+	border-bottom: 1px solid #DDDFE1;
+}
+
+.tabelaEdicoesJT th:nth-child(1), .tabelaEdicoesJT td:nth-child(1),
+	.tabelaEdicoesJT th:nth-child(3), .tabelaEdicoesJT td:nth-child(3) {
+	text-align: center;
+}
+
+.tabelaEdicoesJT.versoes th:nth-child(1), .tabelaEdicoesJT.versoes td:nth-child(1)
+	{
+	text-align: left;
+}
+
+.tabelaEdicoesJT.versoes td {
+	border: 1px solid #DDDFE1;
+}
+
+.tabelaEdicoesJT.versoes td:first-child {
+	border-right: none;
+}
+
+.tabelaEdicoesJT.versoes tr:hover {
+	background-color: #FAFAFA;
+}
+
+.tabelaEdicoesJT.versoes tr:first-child:hover {
+	background-color: transparent;
+}
+
+#corpopaginajurisprudencia a.clsLinkEdicao {
+	color: rgb(7, 182, 211);
+	text-decoration: none;
+}
+
+.tabsEdicaoDestaqueJT.ui-widget.ui-widget-content, .tabsEdicaoDestaqueJT .ui-tabs-panel,
+	.tabsEdicaoDestaqueJT .ui-tabs-nav, .tabsEdicaoDestaqueJT .ui-state-default
+	{
+	border: none;
+	background-color: transparent;
+}
+
+.tabsEdicaoDestaqueJT li.ui-state-default {
+	float: left;
+}
+
+.tabsEdicaoDestaqueJT li.ui-state-default.ultimaAba {
+	float: right;
+	background-color: transparent;
+}
+
+.tabsEdicaoDestaqueJT .ui-tabs-nav {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.tabsEdicaoDestaqueJT .ui-tabs-anchor {
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #707070 !important;
+}
+
+.tabsEdicaoDestaqueJT .ui-tabs-anchor i {
+	margin-right: 0.5em;
+}
+
+.tabsEdicaoDestaqueJT .ui-state-active a {
+	font-weight: bold;
+}
+
+.tabsEdicaoDestaqueJT li.ui-state-active {
+	border-bottom: 2px solid #707070;
+}
+
+.tabsEdicaoDestaqueJT ul.ui-tabs-nav li {
+	width: auto;
+}
+
+.tabsEdicaoDestaqueJT li.ui-state-hover .ui-tabs-anchor {
+	color: rgb(7, 182, 211) !important;
+}
+
+.tabsEdicaoDestaqueJT li.ui-state-hover {
+	border-bottom: 2px solid rgb(7, 182, 211);
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+
+.clsTabPrincipal.ui-widget.ui-widget-content, .clsTabPrincipal>.ui-tabs-nav
+	{
+	border: none;
+}
+
+.clsTabPrincipal>ul>.ui-state-default {
+	border: 1px solid #DDDFE1;
+	background-color: #E6E6E6;
+	text-align: center;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: bold;
+}
+
+.clsTabPrincipal>ul.ui-tabs-nav li {
+	width: 50%;
+	margin: 0;
+}
+
+.clsTabPrincipal>ul.ui-tabs-nav li>.ui-tabs-anchor {
+	float: none;
+	text-align: center;
+	display: block;
+	padding: 1em;
+}
+
+.clsTabPrincipal>ul>.ui-state-default {
+	background-color: #f9f9f9;
+}
+
+.clsTabPrincipal>ul>.ui-state-active {
+	background-color: #E8E8E8;
+	border-bottom: none;
+}
+
+.clsTabPrincipal>ul.ui-tabs-nav {
+	padding: 0;
+}
+
+.clsListaDicas {
+	list-style-type: none;
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #707070;
+	padding: 0;
+}
+
+.clsListaDicas li i {
+	color: rgb(7, 182, 211)
+}
+
+h3.todasAsEdicoes {
+	color: #003F65;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	text-transform: none;
+}
+
+.clsBarraJT {
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #FFFFFF;
+	background-color: #003F65;
+	padding: 0.5em;
+	text-align: center;
+	margin: 0 -20px;
+}
+
+.clsBarraJT i {
+	font-size: 1.5em;
+}
+
+.clsCheckAgrupar input, .clsCheckAgrupar label, .clsCheckOrdem input,
+	.clsCheckOrdem label {
+	display: inline-block;
+	max-width: 80%;
+	vertical-align: middle;
+}
+
+.clsCheckAgrupar label, .clsCheckOrdem label {
+	padding-left: 0.5em;
+	line-height: 1.2em;
+}
+
+#listaEdicoesJT {
+	max-height: 300px;
+	overflow: auto;
+}
+
+.clsCheckOrdem {
+	background-color: #E6E6E6;
+}
+
+.navegacaoTema {
+	color: #707070;
+}
+
+.navegacaoTema a {
+	color: rgb(7, 182, 211) !important;
+}
+
+.navegacaoTema i.fa-solid {
+	font-size: 1.2em;
+}
+
+.clsDivConteudoHistorico {
+	position: absolute;
+	border: 1px solid #DDDFE1;
+	padding: 1em;
+	border-radius: 12px;
+	z-index: 99;
+	width: 90%;
+	background-color: #f9f9f9;
+}
+
+.clsTextoVersoes {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsHistoricoJT {
+	clear: both;
+	display: none;
+	position: absolute;
+	right: 0;
+	margin-top: 3em;
+	background-color: #fafafa;
+	padding: 1em;
+	border: 1px solid #cd0505;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	cursor: normal;
+}
+
+.clsHistoricoJT ul {
+	margin-bottom: 0;
+	padding-left: 1.2em;
+	list-style-type: none;
+}
+
+.formularioRefinamentoFiltros h3 a {
+	text-decoration: none !important;
+	color: #003F65 !important;
+}
+
+.formularioRefinamentoFiltros h3 i {
+	margin-right: 2px;
+}
+
+.labelCompilado i, .labelCompilado span {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 190px;
+}
+
+.formularioRefinamentoFiltros h3.labelCompilado i {
+	font-size: 1.7em;
+	margin-right: 5px;
+}
+
+#tabCASOS_NOTORIOS.clsDestaquePP .slider .item .headerItem {
+	min-height: 4em;
+}
+
+.temasPP {
+	max-height: 28em;
+	overflow: auto;
+} 
+
+.temasPP li i, .temasPP li a {
+	display: inline-block;
+	max-width: 87%;
+	vertical-align: top;
+}
+
+.temasPP li i {
+	margin-top: 3px;
+}
+
+.clsFrmConsultaPP h3 a {
+	text-decoration: none;
+	color: #003F65;
+}
+
+.clsFrmConsultaPP h3 {
+	font-size: 16.9px;
+	font-weight: bold;
+}
+
+.clsFrmConsultaPP h3 i {
+	font-size: 25.35px;
+}
+
+.clsCorpoLegAplic {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDFE1;
+	border-radius: 12px;
+	padding: 1em;
+}
+
+/* outras paginas */
+#corpopaginapadrao {
+	font-size: 13px;
+}
+
+#corpopaginapadrao table.formulario th, #corpopaginapadrao table.formulario td
+	{
+	padding: 0.25em;
+}
+
+#corpopaginapadrao input[type=submit], #corpopaginapadrao input[type=button],
+	#corpopaginapadrao input[type=reset] {
+	background-color: #003f65;
+	color: #FFFFFF;
+	padding: 6px 16px;
+	border: 1px solid #003f65;
+	border-radius: 4px;
+}
+
+#corpopaginapadrao input[type=reset] {
+	color: #003f65;
+	background-color: #FFFFFF;
+}
+
+#corpopaginapadrao input[type=submit]:hover, #corpopaginapadrao input[type=button]:hover,
+	#corpopaginapadrao input[type=reset]:hover, #corpopaginapadrao input[type=submit]:active,
+	#corpopaginapadrao input[type=button]:active, #corpopaginapadrao input[type=reset]:active
+	{
+	background-color: #427591;
+	color: #FFFFFF;
+}
+
+#corpopaginapadrao .tituloLista {
+	font-size: 1.7em;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	background-color: #003f65;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.clsNavegacao>a, .clsNavegacao>span {
+	display: inline-block;
+	line-height: 2em;
+	min-width: 2em;
+	font-size: 1.5em;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.clsNavegacao>a, .clsNavegacao>a:hover {
+	color: #003f65;
+}
+
+.clsNavegacao>span {
+	color: #c0c0c0;
+}
+
+#corpopaginapadrao .form-select, #corpopaginapadrao pre {
+	font-size: 1em;
+}
+
+#corpopaginapadrao pre {
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+.clsIconeHome {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Ubuntu, Arial, sans-serif;
+	color: #003F65!important;
+}
+
+.clsIconeHome i {
+	font-size: 1.2em
+}
+.clsIconesAcoes i.fa-link {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 1.6em;
+	top: 3px;
+	left: 0;
+}
+#listaEdicoesSelecionadas {
+	font-style: italic;
+	font-size: 0.85em;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 76%;
+}
+.clsPanelPesquisaEdicoesJT {
+	padding: 2em;
+	background-color: #E8E8E8;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+.clsPesquisaEdicoesJT {
+	padding: 1em 2em;
+	background-color: #FFFFFF;
+	border-radius: 12px;
+    box-shadow: 0px 0px 6px 3px #d5d3d3;
+}
+.modal-content {
+	border-radius: 12px;
+}
+.modal-header {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+select#materia {
+	font-size: 1em!important;
+}
+.clsTxtApresentacao p {
+	font-family: Ubuntu, Arial, sans-serif;
+	padding: 1em;
+	font-size: 1.2em;
+	margin: 0.5em 0 0 0;	
+}
+button {
+	cursor: pointer;
+}
+.clsIdentificacaoDocumento .highlightBrs {
+	color: #ffa500;
+}
+.tableAcordaos td,
+.tableAcordaos th {
+	border-left: 1px solid #FFFFFF;
+}
+.tableAcordaos th {
+	text-align: left;
+	background-color: #c3d1d9;
+}
+.tabelaEdicoesPP {
+/*	border: 1px solid #c0c0c0;
+	border-collapse: collapse;*/
+	width: 100%;
+}
+.tabelaEdicoesPP td,
+.tabelaEdicoesPP th {
+/*	border: 1px solid #c0c0c0;*/
+	padding: 0.25em;
+}
+#listaEdicoesPP {
+	position: absolute;
+	z-index: 999;
+	background-color: #FFFFFF;
+}
+#listaEdicoesPP a {
+	display: block;
+	padding: 0.25em;	
+}
+#listaEdicoesPP > div {
+	max-height: 20em;
+	overflow-y: auto;
+	border: 1px solid #c0c0c0;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+#listaPesquisasProntas {
+	top: 56px;
+	left: 1px;
+	max-height: 20em;
+	overflow-y: auto;
+	border: 1px solid #c0c0c0;
+	position: absolute;
+	z-index: 999;
+	background-color: #FFFFFF;
+	/*width: 100%;*/
+	margin-left: 11px;
+    width: calc(100% - 22px);
+	display: none;
+	border-radius: 6px;	
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+#listaPesquisasProntas a {
+	padding: 0.25em 1em;
+	display: block;
+	clear: both;
+}
+#listaPesquisasProntas a:visited,
+#listaPesquisasProntas a:hover,
+#listaPesquisasProntas a:active {
+	background-color: #e4e6e7;
+	text-decoration: none;
+}
+#listaPesquisasProntas::-webkit-scrollbar-track {
+	border-radius: 6px;
+	background-color: #f8f9f9;
+}
+#listaPesquisasProntas::-webkit-scrollbar {
+	width: 12px;
+	border-radius: 6px;
+	background-color: #f8f9f9;
+}
+#listaPesquisasProntas::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: #BFC3C6;
+}
+.divSaibaMais {
+	background-color: #FFFFFF;
+	-moz-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+.btn-saibamais {
+	border: none;
+	background-color: transparent;
+	color: #45a2b5;
+}
+.btn-saibamais i {
+	font-size: 1.2em;
+}
+.btnFecha {
+	float: right;
+	padding:0;
+	color: #d9d9d9;
+	border: none;
+	background-color: transparent;
+	font-size: 1.5em;
+}
+#idDivUpload {
+	position: absolute;
+	z-index: 1000;
+	width: 1000px;
+	display: none;
+}
+
+.preview_banner {
+	position: relative;
+}
+.preview_banner .mostra_tipo {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+.preview_banner .mostra_icone {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	width: 90px;
+	height: 90px;
+}
+.preview_banner .mostra_titulo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.preview_banner .divConteudoHTML {
+	display: block;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	bottom: 1em;
+	margin: 15%;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 8%;
+    opacity: 1;
+}
+.carousel-item {
+	max-width: 518px;
+}
+.carousel-item span {
+	display: block;
+}
+.carousel-banner a {
+	text-decoration: none;
+}
+.carousel-banner {
+	width: 100%;
+	height: 246px;
+	background-repeat: no-repeat;
+	background-size: 518px 246px; 
+	padding: 14px 8%;
+	cursor: pointer;
+}
+.carousel-banner .mostra_icone {
+	width: 50px;
+	height: 50px;
+	margin-right: 7px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.carousel-banner .mostra_titulo {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 80%;
+	margin: 0;
+	text-shadow: 5px 3px 10px #FFFFFF;
+}
+.carousel-banner .divConteudoHTML {
+	display: block;
+	position: absolute;
+	width: 84%;
+	z-index: 1000;
+	bottom: 0;
+	color: #FFFFFF;
+	padding: 1em 2em;
+}
+/*.carousel-banner .divConteudoHTML * {
+	color: #FFFFFF;
+}*/
+#frmInclusao .carousel-banner .divConteudoHTML {
+	width: 430px;
+	padding: 1em 2em;
+	bottom: 16px;
+	max-height: 246px;
+	overflow: hidden;
+}
+.mostra_titulo {
+	font-size: 18px;
+	font-weight: bold;
+}
+.carousel-banner .divConteudoHTML > div,
+.carousel-banner .divConteudoHTML > span {
+	display: block;
+	max-height: 100%;
+	overflow: hidden;
+}
+.div_iconesJuris .carousel-banner:after {
+	content: "\eaca";
+	font-family: IcoFont !important;
+	position: absolute;
+	top: 94px;
+	right: 0;
+	font-size: 3em;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.div_iconesJuris .carousel-banner:before {
+	content: "\eac9";
+	font-family: IcoFont !important;
+	position: absolute;
+	top: 94px;
+	left: 0;
+	font-size: 3em;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-image: none;
+}
+.carousel-item a:link,
+.carousel-item a:active,
+.carousel-item a:visited,
+.carousel-item a:hover {
+	text-decoration: none;
+}
+.carousel-banner .divConteudoHTML a {
+	color: #F5AF00;
+	font-weight: bold; 
+}
+.carousel-banner .divConteudoHTML p {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+.carousel-banner .divConteudoHTML p:first-child {
+	margin-top: 0
+}
+.carousel-banner .divConteudoHTML p:last-child {
+	margin-bottom: 0;
+}
+#frmInclusao .carousel-banner {
+	width: 518px;
+}
+/* pesquisa pronta */
+.clsDivMateria {
+	padding: 1em;
+	background-color: #E6E6E6;
+	border: 1px solid #DDDFE1;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.clsDivTitulo {
+	padding: 1em;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDFE1;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.clsDivMateria ul,
+.clsDivTitulo ul {
+	list-style-type: none;
+}
+.clsDivMateria li,
+.clsDivTitulo li {
+	border-left: 2px solid #83CBF1;
+}
+.clsDivMateria li li,
+.clsDivTitulo li li {
+	border: none;
+}
+.clsDivMateria a,
+.clsDivTitulo a {
+	display: block;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: Ubuntu, Arial, sans-serif; 
+}
+.clsDivMateria .clsReferencias a,
+.clsDivTitulo .clsReferencias a {
+	border:none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.mostraTituloNota a:hover ~ .tituloNota{
+	display: block!important;
+}
+.clsLinkGetAcordaosPosteriores:after,
+.clsDivMateria a:after,
+.clsDivTitulo a:after {
+	content: "\f064";
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #83CBF1;
+	color: #179AB4;
+}
+a.clsMostraEmentaRR:after {
+	display: none;
+}
+.btnAbreTitulo {
+	border: 1px solid #C3D1D9;
+	background-color: #C3D1D9;
+	color: #004164;
+	display: block;
+	padding: 0.25rem 1rem;
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	font-family: Ubuntu, Arial, sans-serif;
+	box-shadow: 0px 2px 4px #00000029;
+	margin-top: 1rem;
+}
+
+.btnAbreMateria {
+	border: 1px solid #003F65;
+	background-color: #003F65;
+	color: #FFFFFF;
+	display: block;
+	padding: 0.25rem 1rem;
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	font-family: Ubuntu, Arial, sans-serif;
+	box-shadow: 0px 2px 4px #00000029;
+	margin-top: 1rem;
+}
+.btnAbreTitulo:first-child{
+	margin-top: 0;
+}
+.btnAbreMateria:hover {
+	border-color: #00698f;
+	background-color: #00698f;
+}
+.btnAbreTitulo:hover {
+	border-color: #d0dbe1;
+	background-color: #d0dbe1;
+	color: #004164!important;
+}
+.btnAbreMateria.collapsed,
+.btnAbreMateria.collapsed:hover {
+	color: #2465A4!important;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+.btnAbreTitulo.collapsed,
+.btnAbreTitulo.collapsed:hover {
+	color: #2465A4!important;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+.btnAbreMateria .fa-chevron-up {
+	display: block;
+	float: right;
+	color: #83CBF1;
+	margin-top: 0.25rem;
+}
+.btnAbreTitulo .fa-chevron-up {
+	display: block;
+	float: right;
+	color: #004164;
+	margin-top: 0.25rem;
+}
+.btnAbreMateria .fa-chevron-down,
+.btnAbreTitulo .fa-chevron-down {
+	display: none;
+}
+.btnAbreMateria.collapsed .fa-chevron-up,
+.btnAbreTitulo.collapsed .fa-chevron-up {
+	display: none;
+}
+.btnAbreMateria.collapsed .fa-chevron-down,
+.btnAbreTitulo.collapsed .fa-chevron-down {
+	display: block;
+	float: right;
+	color: #2465A4;
+	margin-top: 0.25rem;
+}
+.clsLinkGetReferencias {
+	background-color: #FFFFFF;
+	border: none;
+	font-family: Ubuntu, Arial, sans-serif; 
+	font-size: 13px;
+	margin-left: 1em;
+}
+.clsLinkGetReferencias i {
+	color: #2465A4;
+	font-size: 16px;
+}
+.clsLinkGetAcordaosPosteriores {
+	background-color: #FFFFFF;
+	border: none;
+	font-family: Ubuntu, Arial, sans-serif; 
+	font-size: 13px;
+	margin-left: 1em;
+}
+.clsLinkGetAcordaosPosteriores i {
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #179AB4;
+	border-radius: 50%;
+	padding: 4px;
+}
+.clsReferencias {
+	margin-left: 4em;
+	margin-top: 1em;
+}
+.clsReferencias h5 {
+	font-size: 13px;
+}
+.corpoPaginaResultado .clsReferencias a,
+.corpoPaginaResultado .clsReferencias a:visited {
+	color: #575756;
+}
+.clsReferencias .iconeSaibaMais {
+	vertical-align: middle;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	border-radius: 6px;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*.clsReferencias .icon_JTeses {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_jurisprudenciaTesesPP.svg");
+}*/
+
+.clsReferencias .icon_LegisAplic {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_legislacao.svg");
+}
+
+.clsReferencias .icon_pesqPront {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_pesquisaPronta.svg");
+}
+
+.clsReferencias .icon_sumanot {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_sumulas.svg");
+}
+
+.clsReferencias .icon_AcordaosPosteriores {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icone-InteiroTeor.svg");
+	background-size: auto;
+	background-position: right;
+	background-color: #179ab4;
+}
+.clsReferencias .icon_RepetitivosIAC {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_repetitivos.svg");
+}
+
+/*.clsReferencias .icon_inform {
+	background-image:
+		url("/recursos/interfacevisual/internet2022/img/icon_informativoPP.svg");
+}
+*/
+.clsReferencias .icon_RepercussaoSTF {
+	background-image:
+		url(/recursos/interfacevisual/internet2022/img/icon_RepercussaoSTF.svg);
+	background-size: 36px 20px;
+	background-color: #00a8e7;
+}
+.clsDivTitulo > ul > li {
+	margin-bottom: 2em;
+}
+.clsBoxTextarea {
+	width: 100%;
+	height: 6.5em;
+	border: 1px solid rgba(191, 195, 198, 0.8);
+	border-radius: 4px;
+	resize: none;
+	margin-bottom: 0.5em;
+}
+.boxSugestao {
+	margin-top: 1.5em;
+}
+.boxSugestao .col {
+	padding: 0;
+}
+.iconSugestao {
+	margin-top: -50px;
+	margin-left: calc(50% - 36px);
+}
+.iconSugestao img {
+	background-color: #ffffff;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	padding: 1em;
+	transform: rotate(45deg);
+}
+.rotated-half-circle {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #DDDFE1;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+.clsBoxTextarea::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F9F9F9;
+	background-color: transparent;
+}
+
+.clsBoxTextarea::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+
+.clsBoxTextarea::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #BFC3C6;
+}
+.colunaResultado .corpoPaginaResultado {
+	border-radius: 12px;
+}
+/*.colunaResultado .texto_apresentacaoPP .btn_pesqPront {
+	width: 101px;
+	height: 101px;
+    background-size: 101px 101px;
+} */
+.colunaResultadoPP {
+	margin-top: 7em;
+}
+/*
+.colunaResultado .texto_apresentacaoPP {
+	font-size: 16px;
+	margin-top: -8em;
+}*/
+.listaTemasPP i {
+	margin-right:0;
+}
+#mailModal .modal-header {
+	background-color: #003F65;
+	color: #FFFFFF;
+}
+#mailModal .modal-content {
+	border: none;
+}
+#mailModal .btn-close,
+#mailModal .btn-close:hover {
+	background: none;
+	color: #FFFFFF!important;
+	opacity: 1;
+}
+#mailModal .btn-close i {
+	font-size: 1.3em;
+	vertical-align: top;	
+}
+#mailModal .modal-body {
+	font-size: 1rem;
+}
+.linkPesquisaTitulo {
+	color: #004164!important;
+	position: absolute;
+	left: 5.5em;
+	margin-top: -2em;
+	cursor: pointer;
+}
+.linkPesquisaMateria {
+	color: #FFFFFF!important;
+	position: absolute;
+	left: 5.5em;
+	margin-top: -2em;
+	cursor: pointer;
+}
+.clsCheckSelecionaMateriaRR {
+	position: absolute;
+	left: 3em;
+	margin-top: -2em;
+	cursor: pointer;
+}
+.clsCheckSelecionaTituloRR {
+	position: absolute;
+	left: 4em;
+	margin-top: -2em;
+	cursor: pointer;
+}
+.linkPesquisaTitulo {
+	margin-top: -2.4em!important;	
+}
+.linkPesquisaTitulo:hover,
+.linkPesquisaMateria:hover{
+	text-decoration: none;
+}
+.collapsed + .linkPesquisaTitulo,
+.collapsed + .linkPesquisaMateria {
+	color: #2465A4!important;
+}
+.btnAbreMateria,
+.btnAbreTitulo {
+	padding-left: 4em;
+}
+
+.clsDivMateria a.linkPesquisaTitulo:after{
+	display:none;
+}
+.labelRamos {
+    font-family: Ubuntu, Arial, sans-serif !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #003F65 !important;
+    border: none!important;
+}
+.clsDivMateria a.link,
+.clsDivTitulo a.link {
+	border:none;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+.clsDivMateria a.link:after,
+.clsDivTitulo a.link:after {
+	display: none;
+}
+.clsCheckSelecionaMateriaRR,
+.clsCheckSelecionaTituloRR{
+	margin-top: -1.8em;
+}
+#btnGerarPDFRR {
+	font-size: 9px;
+	cursor: pointer;
+}
+.btnAbrirTodosTitulos,
+.btnFecharTodosTitulos{
+	font-size: 9px;
+	margin-top: -2em;
+}
+.linkAbreEmenta a {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.linkAbreEmenta {
+	font-family: Ubuntu, Arial, sans-serif; 
+	margin: 0.5em;
+	padding: 0.5em;
+}
+.linkAbreEmenta a:after {
+	display: none;
+}
+.clsSelecionaTipoPDF {
+	display: inline-block;
+	margin-left: 1em;
+}
+.clsSelecionaTipoPDF span {
+	text-transform: none;
+}
+.barraOutrasBases small, .barraOutrasBases br {
+ display: none;
+ }
+.divMensagemTutorial li a.sos {
+ 	padding-left: 0;
+}
+.divMensagemTutorial li a.sos i {
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.carousel-bannerJUR01E .mostra_titulo {
+	position: absolute;
+	left: 45%;
+	top:1em;
+}
+.carousel-bannerJUR01E .divConteudoHTML {
+	color: #575756;
+	top: 4.5em;
+	right: 0;
+	left: 45%;
+	width: 50%;
+	margin-bottom: 3em;
+	padding: 1em 0 1em 0.5em
+}
+.carousel-bannerJUR01E .divConteudoHTML a {
+	display: inline-block;
+	padding: 1em;
+	margin-top: 2em;
+	border-radius: 4px;
+	margin-right: 1em;
+	color: #FFFFFF!important;
+	background-color: #00698f;
+}
+.carousel-bannerJUR01E #idDivConteudoHTML {
+	margin-bottom: 0;
+	right: auto;
+	left: 225px;
+}
