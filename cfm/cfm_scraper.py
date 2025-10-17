@@ -238,32 +238,67 @@ def search_all_terms():
     return all_results
 
 
-def save_to_csv(articles, filename=None):
+def clean_and_filter_cfm(articles):
     """
-    Salva os artigos coletados em um arquivo CSV
+    Limpa os dados removendo duplicatas e filtra apenas normas do CFM
     """
     if not articles:
-        print("Nenhum artigo para salvar")
+        print("❌ Nenhum artigo para limpar")
+        return []
+
+    # Converter para DataFrame
+    df = pd.DataFrame(articles)
+
+    print(f"\n{'='*60}")
+    print(f"LIMPEZA E FILTRAGEM DOS DADOS")
+    print(f"{'='*60}")
+    print(f"📊 Dados originais: {len(df)} registros")
+
+    # Remover colunas de metadados da busca
+    columns_to_remove = ['termo_busca', 'pagina']
+    df_clean = df.drop(columns=[col for col in columns_to_remove if col in df.columns])
+
+    # Remover duplicatas
+    duplicates_before = df_clean.duplicated().sum()
+    df_clean = df_clean.drop_duplicates()
+    print(f"🔍 Duplicatas removidas: {duplicates_before}")
+    print(f"✅ Após remoção de duplicatas: {len(df_clean)} registros")
+
+    # Filtrar apenas CFM
+    if 'UF' in df_clean.columns:
+        df_cfm = df_clean[df_clean['UF'] == 'CFM'].copy()
+        print(f"🎯 Filtrado apenas CFM: {len(df_cfm)} registros")
+        print(f"🗑️  Registros de outros CRMs removidos: {len(df_clean) - len(df_cfm)}")
+    else:
+        df_cfm = df_clean
+        print("⚠️  Coluna 'UF' não encontrada, mantendo todos os registros")
+
+    return df_cfm
+
+
+def save_to_csv(df, filename=None):
+    """
+    Salva o DataFrame limpo em um arquivo CSV
+    """
+    if df is None or len(df) == 0:
+        print("❌ Nenhum dado para salvar")
         return None
-    
+
     # Gerar nome do arquivo se não fornecido
     if not filename:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"cfm_normas_doencas_raras_{timestamp}.csv"
-    
-    # Converter para DataFrame
-    df = pd.DataFrame(articles)
-    
+
     # Reordenar colunas para melhor visualização
-    column_order = ['termo_busca', 'Tipo', 'UF', 'Nº/Ano', 'Situação', 'Ementa', 'Link', 'pagina']
-    
+    column_order = ['Tipo', 'UF', 'Nº/Ano', 'Situação', 'Ementa', 'Link']
+
     # Manter apenas colunas que existem
     existing_columns = [col for col in column_order if col in df.columns]
     remaining_columns = [col for col in df.columns if col not in column_order]
     final_columns = existing_columns + remaining_columns
-    
+
     df = df[final_columns]
-    
+
     # Salvar CSV
     try:
         df.to_csv(filename, index=False, encoding='utf-8')
@@ -276,54 +311,47 @@ def save_to_csv(articles, filename=None):
         return None
 
 
-def generate_summary_report(articles):
+def generate_summary_report(df):
     """
-    Gera relatório resumido dos resultados
+    Gera relatório resumido dos resultados (aceita DataFrame ou lista)
     """
-    if not articles:
+    if df is None or len(df) == 0:
         return
-    
-    from collections import defaultdict, Counter
-    
+
+    # Se for lista, converter para DataFrame
+    if isinstance(df, list):
+        df = pd.DataFrame(df)
+
+    from collections import Counter
+
     # Estatísticas gerais
     print(f"\n{'='*60}")
-    print(f"RELATÓRIO RESUMIDO")
+    print(f"RELATÓRIO RESUMIDO - NORMAS CFM")
     print(f"{'='*60}")
-    print(f"Total de artigos coletados: {len(articles)}")
-    
-    # Distribuição por termo de busca
-    articles_by_term = defaultdict(list)
-    for article in articles:
-        term = article.get('termo_busca', 'N/A')
-        articles_by_term[term].append(article)
-    
-    print("\n📈 Distribuição por termo de busca:")
-    for term, term_articles in sorted(articles_by_term.items(), key=lambda x: len(x[1]), reverse=True):
-        print(f"  • {term}: {len(term_articles)} artigos")
-    
+    print(f"📊 Total de normas CFM: {len(df)}")
+
     # Distribuição por tipo
-    tipos = [article.get('Tipo', 'N/A') for article in articles]
-    tipo_counts = Counter(tipos)
-    
-    print("\n📊 Distribuição por tipo de norma:")
-    for tipo, count in tipo_counts.most_common():
-        print(f"  • {tipo}: {count} artigos")
-    
-    # Distribuição por UF
-    ufs = [article.get('UF', 'N/A') for article in articles]
-    uf_counts = Counter(ufs)
-    
-    print("\n🗺️  Distribuição por UF:")
-    for uf, count in uf_counts.most_common():
-        print(f"  • {uf}: {count} artigos")
-    
+    if 'Tipo' in df.columns:
+        tipo_counts = df['Tipo'].value_counts()
+        print("\n📋 Distribuição por tipo de norma:")
+        for tipo, count in tipo_counts.items():
+            print(f"  • {tipo}: {count} normas")
+
     # Distribuição por situação
-    situacoes = [article.get('Situação', 'N/A') for article in articles]
-    situacao_counts = Counter(situacoes)
-    
-    print("\n⚖️  Distribuição por situação:")
-    for situacao, count in situacao_counts.most_common():
-        print(f"  • {situacao}: {count} artigos")
+    if 'Situação' in df.columns:
+        situacao_counts = df['Situação'].value_counts()
+        print("\n⚖️  Distribuição por situação:")
+        for situacao, count in situacao_counts.items():
+            print(f"  • {situacao}: {count} normas")
+
+    # Anos mais recentes
+    if 'Nº/Ano' in df.columns:
+        anos = df['Nº/Ano'].str.extract(r'/(\d{4})$', expand=False).dropna()
+        if len(anos) > 0:
+            ano_counts = anos.value_counts().head(5)
+            print("\n📅 Anos com mais normas (Top 5):")
+            for ano, count in ano_counts.items():
+                print(f"  • {ano}: {count} normas")
 
 
 def main():
@@ -331,37 +359,43 @@ def main():
     Função principal para executar a busca e parsing
     """
     print("Iniciando busca completa de normas do CFM sobre doenças raras...")
-    
+
     # Buscar todos os termos
     all_articles = search_all_terms()
-    
+
     if not all_articles:
         print("❌ Nenhum artigo foi coletado")
         return
-    
+
+    # Limpar dados, remover duplicatas e filtrar apenas CFM
+    df_cfm = clean_and_filter_cfm(all_articles)
+
+    if df_cfm is None or len(df_cfm) == 0:
+        print("❌ Nenhum dado após limpeza e filtragem")
+        return
+
     # Gerar relatório resumido
-    generate_summary_report(all_articles)
-    
+    generate_summary_report(df_cfm)
+
     # Salvar em CSV
-    csv_filename = save_to_csv(all_articles)
-    
-    # Mostrar alguns exemplos
+    csv_filename = save_to_csv(df_cfm)
+
+    # Mostrar algumas normas de exemplo
     print(f"\n{'='*60}")
-    print("PRIMEIROS 3 ARTIGOS:")
+    print("PRIMEIRAS 3 NORMAS CFM:")
     print(f"{'='*60}")
-    
-    for i, article in enumerate(all_articles[:3], 1):
-        print(f"\nARTIGO {i} (Termo: {article.get('termo_busca', 'N/A')}):")
+
+    for i in range(min(3, len(df_cfm))):
+        row = df_cfm.iloc[i]
+        print(f"\nNORMA {i+1}:")
         print("-" * 50)
-        for key, value in article.items():
-            if key in ['termo_busca', 'pagina']:
-                continue
-            if key == 'Ementa':
-                ementa_preview = value[:100] + "..." if len(value) > 100 else value
-                print(f"{key}: {ementa_preview}")
+        for col in df_cfm.columns:
+            value = row[col]
+            if col == 'Ementa' and isinstance(value, str) and len(value) > 100:
+                print(f"{col}: {value[:100]}...")
             else:
-                print(f"{key}: {value}")
-    
+                print(f"{col}: {value}")
+
     if csv_filename:
         print(f"\n🎯 Processo concluído! Dados salvos em: {csv_filename}")
 
