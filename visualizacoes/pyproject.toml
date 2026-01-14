@@ -1,0 +1,11 @@
+[project]
+name = "visualizacoes"
+version = "0.1.0"
+description = "Visualizações de normas sobre doenças raras"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10",
+]
+
+[tool.uv]
+dev-dependencies = []
